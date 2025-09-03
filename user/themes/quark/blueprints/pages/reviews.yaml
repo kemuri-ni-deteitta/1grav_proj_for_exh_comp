@@ -1,0 +1,181 @@
+# ========================================
+# BLUEPRINT: Reviews Page Configuration (Theme Version)
+# ========================================
+# This file controls the admin panel interface for the "Отзывы" (Reviews) page
+# File location: user/themes/quark/blueprints/pages/reviews.yaml
+# 
+# WHAT THIS FILE DOES:
+# - Defines the admin panel layout and fields for the Reviews page
+# - Controls how content editors can add/edit reviews
+# - Sets validation rules and field types
+# ========================================
+
+# 🎯 MAIN BLUEPRINT TITLE - This appears in the admin panel header
+# Change this to customize the admin panel title
+title: Отзывы
+
+# 📋 BLUEPRINT EXTENSION - Inherits from default page blueprint
+'@extends':
+    type: default
+    context: blueprints://pages
+
+# 🏗️ FORM CONFIGURATION - Main form settings
+form:
+  # 🔓 VALIDATION LEVEL - "loose" means minimal validation (all fields optional)
+  validation: loose
+
+  # 📝 FORM FIELDS - Defines the admin panel interface
+  fields:
+    # 🗂️ TAB SYSTEM - Organizes fields into tabs
+    tabs:
+      type: tabs
+      active: 1  # Which tab is open by default (1 = first tab)
+
+      # 📄 TAB DEFINITIONS
+      fields:
+        # ========================================
+        # TAB 1: CONTENT (Main page content)
+        # ========================================
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT  # Tab title in admin panel
+
+          # 📝 CONTENT TAB FIELDS
+          fields:
+            # 🛡️ XSS PROTECTION - Security feature
+            xss_check:
+              type: xss
+
+            # 📄 PAGE TITLE - The main page title
+            header.title:
+              type: text
+              autofocus: true  # Cursor starts here when page loads
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+
+            # 📝 PAGE CONTENT - Main page text (markdown editor)
+            content:
+              type: markdown
+              validate:
+                type: textarea
+
+            # 🖼️ PAGE MEDIA - Upload images for the page itself
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA
+
+        # ========================================
+        # TAB 2: REVIEWS (The main reviews functionality)
+        # ========================================
+        reviews:
+          type: tab
+          title: Отзывы  # 🎯 CHANGE THIS: Tab title in admin panel
+
+          # 📝 REVIEWS TAB FIELDS
+          fields:
+            # 📋 REVIEWS LIST - Container for all reviews
+            header.reviews:
+              type: list  # Creates a list of review items
+              style: vertical
+              label: Список отзывов  # 🎯 CHANGE THIS: Section title
+              help: Добавьте отзывы клиентов  # 🎯 CHANGE THIS: Help text below title
+              collapsed: false  # Always show the list (not collapsed)
+              btnLabel: Добавить отзыв  # 🎯 CHANGE THIS: Button text
+
+              # 📝 INDIVIDUAL REVIEW FIELDS - What each review contains
+              fields:
+                # 🏢 COMPANY NAME FIELD
+                .company_name:
+                  type: text
+                  label: Название компании  # 🎯 CHANGE THIS: Field label
+                  placeholder: Введите название компании (необязательно)  # 🎯 CHANGE THIS: Placeholder text
+
+                # 📝 REVIEW TEXT FIELD
+                .review_text:
+                  type: textarea  # Multi-line text input
+                  label: Текст отзыва  # 🎯 CHANGE THIS: Field label
+                  placeholder: Введите текст отзыва (необязательно)  # 🎯 CHANGE THIS: Placeholder text
+                  rows: 4  # Number of visible text lines
+
+                # 🖼️ IMAGE UPLOAD FIELD
+                .image_upload:
+                  type: file
+                  label: Загрузить фотографию  # 🎯 CHANGE THIS: Field label
+                  destination: 'user://pages/02.o-kompanii/03.otzyvy'  # 🎯 CHANGE THIS: Where files are saved
+                  multiple: false  # Only one file per review
+                  limit: 1  # Maximum 1 file
+                  filesize: 5  # 🎯 CHANGE THIS: Maximum file size in MB
+                  accept:  # 🎯 CHANGE THIS: Allowed file types
+                    - .jpg
+                    - .jpeg
+                    - .png
+                    - .gif
+                    - .webp
+                  help: Загрузите фотографию отзыва (необязательно). Максимальный размер 5MB.  # 🎯 CHANGE THIS: Help text
+
+        # ========================================
+        # TAB 3: OPTIONS (Advanced page settings)
+        # ========================================
+        options:
+          type: tab
+          title: PLUGIN_ADMIN.OPTIONS
+
+          # ⚙️ OPTIONS TAB FIELDS
+          fields:
+            # 📁 FOLDER ORDERING - Numeric prefixes for page ordering
+            ordering:
+              type: toggle
+              label: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX
+              help: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX_HELP
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            # 📁 FOLDER NAME - Page folder name
+            folder:
+              type: text
+              label: PLUGIN_ADMIN.FOLDER_NAME
+              help: PLUGIN_ADMIN.FOLDER_NAME_HELP
+              validate:
+                rule: slug
+
+            # 🔗 ROUTE - Page URL structure
+            route:
+              type: parents
+              label: PLUGIN_ADMIN.PARENT
+              classes: fancy
+
+# ========================================
+# 🎯 QUICK REFERENCE FOR CHANGES:
+# ========================================
+# 
+# MAIN TITLE (appears in admin header):
+# - Line 15: title: Отзывы
+#
+# TAB TITLES:
+# - Line 69: title: Отзывы
+#
+# FIELD LABELS:
+# - Line 78: label: Список отзывов
+# - Line 79: help: Добавьте отзывы клиентов
+# - Line 80: btnLabel: Добавить отзыв
+# - Line 85: label: Название компании
+# - Line 91: label: Текст отзыва
+# - Line 97: label: Загрузить фотографию
+#
+# PLACEHOLDER TEXTS:
+# - Line 86: placeholder: Введите название компании (необязательно)
+# - Line 92: placeholder: Введите текст отзыва (необязательно)
+#
+# HELP TEXTS:
+# - Line 103: help: Загрузите фотографию отзыва (необязательно). Максимальный размер 5MB.
+#
+# FILE UPLOAD SETTINGS:
+# - Line 100: filesize: 5 (maximum file size in MB)
+# - Line 101-107: accept: (allowed file types)
+# - Line 99: destination: (where files are saved)
+#
+# ======================================== 

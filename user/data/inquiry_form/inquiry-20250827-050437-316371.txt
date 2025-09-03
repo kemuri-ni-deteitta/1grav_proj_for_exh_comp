@@ -1,0 +1,10 @@
+Ваше имя: dsa
+Компания: dasdasd
+Телефон: dasdas
+Email: krendel160575@gmail.com
+Услуга: Дизайн выставочных стендов
+Бюджет проекта: sa
+Описание проекта: da
+Прикрепить файлы: {&quot;tmp:\/\/forms\/JZv9xIubFOe01rt.jpg&quot;:{&quot;name&quot;:&quot;JZv9xIubFOe01rt.jpg&quot;,&quot;full_path&quot;:&quot;2.jpg&quot;,&quot;type&quot;:&quot;image\/jpeg&quot;,&quot;size&quot;:287975,&quot;path&quot;:&quot;tmp:\/\/forms\/JZv9xIubFOe01rt.jpg&quot;}}
+Согласие на обработку персональных данных: 1
+

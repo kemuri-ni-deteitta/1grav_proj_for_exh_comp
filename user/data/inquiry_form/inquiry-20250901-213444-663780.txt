@@ -1,0 +1,10 @@
+Ваше имя: 23123
+Компания: 3123123
+Телефон: 12312312
+Email: 3123@312.com
+Услуга: Полный выставочный сервис
+Бюджет проекта: 321
+Описание проекта: 2333
+Прикрепить файлы: {&quot;user-data:\/\/forms\/uploads\/nagr2.jpg&quot;:{&quot;name&quot;:&quot;nagr2.jpg&quot;,&quot;full_path&quot;:&quot;nagr2.jpg&quot;,&quot;type&quot;:&quot;image\/jpeg&quot;,&quot;size&quot;:366793,&quot;path&quot;:&quot;user-data:\/\/forms\/uploads\/nagr2.jpg&quot;}}
+Согласие на обработку персональных данных: 1
+

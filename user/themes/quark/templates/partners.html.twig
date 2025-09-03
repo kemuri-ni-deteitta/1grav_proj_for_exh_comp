@@ -1,0 +1,206 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set grid_size = theme_var('grid-size') %}
+
+{% block titlebar %}
+    {% if grav.admin %}
+        <div class="button-bar">
+            <a class="button" href="{{ admin_route('/pages') }}"><i class="fa fa-reply"></i> {{ "PLUGIN_ADMIN.BACK"|t }}</a>
+            <button class="button success" name="task" value="save" form="blueprints" type="submit" style="background: #77559D !important; color: white !important;"><i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|t }}</button>
+        </div>
+        <h1><i class="fa fa-fw fa-file-text-o"></i> {{ page.title }}</h1>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if not grav.admin %}
+        <div class="content-wrapper">
+            <div class="container {{ grid_size }}">
+                <!-- Page Content -->
+                <div class="page-content">
+                    {{ page.content|raw }}
+                </div>
+
+                <!-- Partners Section -->
+                {% if header.partners %}
+                <section class="partners-section">
+                    <div class="partners-grid">
+                        {% for partner in header.partners %}
+                        <div class="partner-item">
+                            {% set partner_logo = null %}
+            
+                            {# Check for uploaded logo #}
+                            {% if partner.logo_upload %}
+                                {% for filepath, filedata in partner.logo_upload %}
+                                    {% if not partner_logo and filedata.name %}
+                                        {% set partner_logo = page.media[filedata.name] %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                            
+                            {# Company name displayed above the logo - see CSS for font styling #}
+                            {% if partner.company_name %}
+                            <h3 class="company-name">
+                                {% if partner.website %}
+                                    <a href="{{ partner.website }}" target="_blank" rel="noopener">{{ partner.company_name }}</a>
+                                {% else %}
+                                    {{ partner.company_name }}
+                                {% endif %}
+                            </h3>
+                            {% endif %}
+                            
+                            {% if partner_logo %}
+                            <div class="partner-logo">
+                                {% if partner.website %}
+                                    <a href="{{ partner.website }}" target="_blank" rel="noopener">
+                                        <img src="{{ partner_logo.url }}" 
+                                             alt="{{ partner.company_name ?: 'Логотип компании' }}"
+                                             loading="lazy">
+                                    </a>
+                                {% else %}
+                                    <img src="{{ partner_logo.url }}" 
+                                         alt="{{ partner.company_name ?: 'Логотип компании' }}"
+                                         loading="lazy">
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    {% if header.partners|length == 0 %}
+                    <div class="no-partners">
+                        <p>Информация о партнерах будет добавлена в ближайшее время.</p>
+                    </div>
+                    {% endif %}
+                </section>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+
+    <style>
+    /* Partners Section Styles */
+    .partners-section {
+        margin-top: 2rem;
+        padding: 1rem 0;
+    }
+
+    .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        margin: 2rem 0;
+        justify-items: center;
+    }
+
+    .partner-item {
+        text-align: center;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .partner-logo {
+        background: #ffffff;
+        border: 2px solid #f0f0f0;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-top: 1rem;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .partner-logo:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 4px 16px rgba(255, 102, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .partner-logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .partner-logo:hover img {
+        transform: scale(1.05);
+    }
+
+    .partner-logo a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Company name styling - positioned above the logo */
+    .company-name {
+        font-size: 1.3rem;          /* Same as main page text */
+        font-weight: 400;            /* Same as main page text (normal weight) */
+        color: var(--dark-color);   /* Same as main page text */
+        margin-bottom: 1.5rem;      /* Same as main page text */
+        line-height: 1.8;           /* Same as main page text */
+        letter-spacing: 0;           /* Remove letter spacing to match main text */
+        font-family: inherit;       /* Inherit font family from body */
+    }
+
+    .company-name a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .company-name a:hover {
+        color: var(--primary-color);
+    }
+
+    .no-partners {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: #666;
+    }
+
+    /* Mobile Responsive - Font sizes adjust for smaller screens */
+    @media (max-width: 768px) {
+        .partners-grid {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+        
+        .partner-logo {
+            height: 150px;
+            padding: 1.5rem;
+        }
+        
+        .company-name {
+            font-size: 1.2rem;       /* Smaller font size on tablets */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .partners-grid {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+        
+        .partner-item {
+            max-width: 280px;
+        }
+        
+        .partner-logo {
+            height: 140px;
+            padding: 1.5rem;
+        }
+        
+        .company-name {
+            font-size: 1.1rem;       /* Even smaller font size on mobile phones */
+        }
+    }
+    </style>
+{% endblock %} 

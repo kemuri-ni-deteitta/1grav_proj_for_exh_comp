@@ -1,0 +1,69 @@
+title: Partners Page
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+              
+            header.menu:
+              type: text
+              label: PLUGIN_ADMIN.MENU
+              help: PLUGIN_ADMIN.MENU_HELP
+              
+            content:
+              type: editor
+              label: PLUGIN_ADMIN.CONTENT
+              help: Описание страницы партнеров
+              
+        partners:
+          type: tab
+          title: Клиенты и партнеры
+          fields:
+            header.partners:
+              type: list
+              style: vertical
+              label: Список клиентов и партнеров
+              help: Добавьте логотипы и информацию о ваших клиентах и партнерах
+              collapsed: false
+              btnLabel: Добавить партнера
+              fields:
+                .company_name:
+                  type: text
+                  label: Название компании
+                  placeholder: Введите название компании
+                  validate:
+                    required: true
+                .logo_upload:
+                  type: file
+                  label: Загрузить логотип
+                  destination: 'user://pages/02.o-kompanii/02.klienty-i-partnery'
+                  multiple: false
+                  limit: 1
+                  filesize: 2
+                  accept:
+                    - .jpg
+                    - .jpeg
+                    - .png
+                    - .gif
+                    - .webp
+                    - .svg
+                  help: Загрузите логотип компании. Максимальный размер 2MB.
+
+                .website:
+                  type: url
+                  label: Веб-сайт (необязательно)
+                  placeholder: https://example.com 

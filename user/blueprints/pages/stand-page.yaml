@@ -1,0 +1,79 @@
+title: Stand Page
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+              
+            content:
+              type: markdown
+              label: PLUGIN_ADMIN.CONTENT
+              validate:
+                type: textarea
+                
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA
+
+        gallery:
+          type: tab
+          title: Примеры работ
+          
+          fields:
+            gallery_info:
+              type: spacer
+              title: Настройки галереи
+              
+            header.gallery:
+              type: list
+              style: vertical
+              label: Галерея работ
+              help: Добавьте изображения для раздела "Примеры работ"
+              collapsed: false
+              btnLabel: Добавить изображение
+              
+              fields:
+                .image_upload:
+                  type: file
+                  label: Загрузить изображение
+                  multiple: false
+                  limit: 1
+                  filesize: 8
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/gif
+                    - image/webp
+                    - '.jpg'
+                    - '.jpeg'
+                    - '.png'
+                    - '.gif'
+                    - '.webp'
+                  help: "Загрузите изображение стенда. Максимальный размер 8MB."
+                  avoid_overwriting: false
+                  random_name: true
+                    
+                .title:
+                  type: text
+                  label: Заголовок
+                  placeholder: Название работы
+                  
+                .desc:
+                  type: textarea
+                  label: Описание
+                  placeholder: Описание работы
+                  rows: 3 

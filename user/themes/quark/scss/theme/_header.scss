@@ -1,0 +1,114 @@
+#header {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  border-bottom: 1px solid rgba($gray-color, 0.2);
+  @extend .default-animation;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  background: $light-color; // White background
+  color: $dark-color; // Dark text
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  a {
+    color: $dark-color; // Dark links
+    
+    &:hover, &:focus, &.active {
+      color: $primary-color !important; // Orange on hover
+    }
+  }
+
+  .logo svg path {
+    fill: $dark-color; // Dark logo
+  }
+
+  .header-dark &:not(.scrolled) {
+    background: $light-color; // Keep white background
+    color: $dark-color; // Dark text
+    
+    a {
+      color: $dark-color !important; // Dark links
+      
+      &:hover, &:focus, &.active {
+        color: $primary-color !important; // Orange on hover
+      }
+    }
+    
+    .dropmenu ul ul a {
+        color: $dark-color !important;
+    }
+    
+    .logo svg path {
+      fill: $dark-color; // Dark logo
+    }
+  }
+
+  .header-dark.header-transparent &:not(.scrolled) {
+    background: rgba($light-color, 0.95); // Slightly transparent white
+  }
+
+  .header-transparent &:not(.scrolled) {
+    background: rgba($light-color, 0.95); // Slightly transparent white
+  }
+
+  .navbar-section {
+    height: auto;
+    min-height: 100px;
+    @extend .default-animation;
+
+    @include breakpoint(md) {
+      &.desktop-menu {
+        display: none;
+      }
+    }
+  }
+
+  .logo {
+    svg, img {
+      height: 35px;
+      display: inherit;
+      @extend .default-animation;
+    }
+  }
+
+  // Fixed Header solution
+  .header-fixed & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add shadow for fixed header
+  }
+}
+
+// Animate Fixed Header
+body.header-fixed.header-animated {
+  #header.scrolled {
+    min-height: 100px;
+
+    .navbar-section {
+      min-height: 100px;
+    }
+
+    .logo {
+      svg, img {
+        height: 30px;
+      }
+    }
+
+    ~ .mobile-menu .button_container {
+      top: 0.5rem;
+    }
+  }
+}
+
+.login-status-wrapper {
+  white-space: nowrap;
+  margin-left: 1rem;
+}

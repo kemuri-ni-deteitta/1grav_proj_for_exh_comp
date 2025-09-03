@@ -1,0 +1,49 @@
+/* Update primary color to orange in the compiled CSS */
+:root {
+  --primary-color: #ff6600;
+}
+
+/* Override existing blue color with orange */
+.btn-primary, .button-primary {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+}
+
+.btn-primary:hover, .button-primary:hover {
+  background-color: #e55a00 !important;
+  border-color: #e55a00 !important;
+}
+
+/* Navigation active states */
+.dropmenu ul li a:hover,
+.dropmenu ul li a:focus,
+.dropmenu ul li a.active {
+  color: #ff6600 !important;
+}
+
+/* Links */
+a {
+  color: #ff6600;
+}
+
+a:hover {
+  color: #e55a00;
+}
+
+/* Form focus states */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+}
+
+/* Mobile menu */
+.mobile-menu .button_container span {
+  background: #ff6600;
+}
+
+/* H1 headings */
+h1 {
+  color: #ff6600;
+}

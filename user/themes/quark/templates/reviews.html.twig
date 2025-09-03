@@ -1,0 +1,313 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set grid_size = theme_var('grid-size') %}
+
+{% block titlebar %}
+    {% if grav.admin %}
+        <div class="button-bar">
+            <a class="button" href="{{ admin_route('/pages') }}"><i class="fa fa-reply"></i> {{ "PLUGIN_ADMIN.BACK"|t }}</a>
+            <button class="button success" name="task" value="save" form="blueprints" type="submit" style="background: #77559D !important; color: white !important;"><i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|t }}</button>
+        </div>
+        <h1><i class="fa fa-fw fa-file-text-o"></i> {{ page.title }}</h1>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if not grav.admin %}
+        <div class="content-wrapper">
+            <div class="container {{ grid_size }}">
+                <!-- Page Content -->
+                <div class="page-content">
+                    {{ page.content|raw }}
+                </div>
+
+                <!-- Reviews Section (with certificates functionality) -->
+                {% if header.reviews %}
+                <section class="reviews-section">
+                    <div class="reviews-grid">
+                        {% for review in header.reviews %}
+                        <div class="review-item">
+                            <div class="review-card">
+                                {% set review_image = null %}
+                
+                {# Check for uploaded image first #}
+                {% if review.image_upload %}
+                    {% for filepath, filedata in review.image_upload %}
+                        {% if not review_image and filedata.name %}
+                            {% set review_image = page.media[filedata.name] %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                
+                {% if review_image %}
+                <div class="review-image">
+                    <img src="{{ review_image.url }}" 
+                         alt="{{ review.company_name ?: 'Отзыв' }}"
+                         onclick="openReviewModal('{{ review_image.url }}', '{{ review.company_name|e('html_attr') }}')"
+                         loading="lazy">
+                </div>
+                {% elseif review.image_upload %}
+                <div class="review-image">
+                    <div class="no-image">
+                        {% for filepath, filedata in review.image_upload %}
+                            <p>Изображение не найдено: {{ filedata.name ?: filepath }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                                
+                                <div class="review-content">
+                                    {% if review.company_name %}
+                                    <h3 class="review-title">{{ review.company_name }}</h3>
+                                    {% endif %}
+                                    
+                                    {% if review.review_text %}
+                                    <p class="review-description">{{ review.review_text }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    {% if header.reviews|length == 0 %}
+                    <div class="no-reviews">
+                        <p>Отзывы будут добавлены в ближайшее время.</p>
+                    </div>
+                    {% endif %}
+                </section>
+                
+                <!-- Review Modal -->
+                <div id="reviewModal" class="review-modal" onclick="closeReviewModal()">
+                    <div class="modal-content" onclick="event.stopPropagation()">
+                        <span class="modal-close" onclick="closeReviewModal()">&times;</span>
+                        <img id="modalImage" src="" alt="">
+                        <div id="modalCaption" class="modal-caption"></div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+
+    <style>
+    /* Reviews Grid Styles */
+    .reviews-section {
+        margin-top: 2rem;
+    }
+
+    .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .review-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-card {
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .review-image {
+        position: relative;
+        overflow: hidden;
+        background: #f8f9fa;
+        flex: 1;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .review-image:hover img {
+        transform: scale(1.05);
+    }
+
+    .review-content {
+        padding: 1.5rem;
+        background: #ffffff;
+    }
+
+    .review-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2c2c2c;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.4;
+    }
+
+    .review-description {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .no-reviews {
+        text-align: center;
+        padding: 3rem 1rem;
+        color: #666;
+    }
+
+    .no-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        background: #f8f9fa;
+        border: 2px dashed #dee2e6;
+        border-radius: 8px;
+        color: #6c757d;
+        font-style: italic;
+    }
+
+    .no-image p {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Review Modal Styles */
+    .review-modal {
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        animation: fadeIn 0.3s ease;
+    }
+
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 800px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .modal-content img {
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .modal-close:hover {
+        color: #77559D;
+    }
+
+    .modal-caption {
+        margin-top: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .reviews-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .review-content {
+            padding: 1rem;
+        }
+        
+        .review-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .modal-content {
+            width: 95%;
+            padding: 0 1rem;
+        }
+        
+        .modal-close {
+            top: -35px;
+            font-size: 1.5rem;
+        }
+    }
+    </style>
+
+    <script>
+    // Review Modal Functions
+    function openReviewModal(imageSrc, companyName) {
+        const modal = document.getElementById('reviewModal');
+        const modalImg = document.getElementById('modalImage');
+        const caption = document.getElementById('modalCaption');
+        
+        modal.style.display = 'block';
+        modalImg.src = imageSrc;
+        modalImg.alt = companyName;
+        caption.textContent = companyName;
+        
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeReviewModal() {
+        const modal = document.getElementById('reviewModal');
+        modal.style.display = 'none';
+        
+        // Restore body scroll
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeReviewModal();
+        }
+    });
+    </script>
+{% endblock %} 

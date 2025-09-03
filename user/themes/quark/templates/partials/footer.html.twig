@@ -1,0 +1,32 @@
+{% set grid_size = theme_var('grid-size') %}
+<section id="footer" class="section bg-footer-dark">
+    <section class="container {{ grid_size }}">
+        <div class="footer-bottom">
+            <div class="columns">
+                <div class="column col-12 text-center">
+                    <p>&copy; {% set current_year = "now"|date("Y") %}{% set start_year = 2025 %}{% if current_year == start_year %}{{ current_year }}{% else %}{{ start_year }}–{{ current_year }}{% endif %} Expo Land. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<style>
+#footer {
+    background: #2c2c2c;
+    color: #ffffff;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.footer-bottom {
+    color: #999999;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 0.80rem 0 0 0;
+}
+</style>

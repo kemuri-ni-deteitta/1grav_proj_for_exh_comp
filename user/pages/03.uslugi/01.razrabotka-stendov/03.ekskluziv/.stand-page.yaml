@@ -1,0 +1,193 @@
+title: Эксклюзивные стенды
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+            content:
+              type: markdown
+              validate:
+                type: textarea
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA
+              
+        gallery:
+          type: tab
+          title: Галерея работ
+          fields:
+            header.gallery:
+              type: list
+              style: vertical
+              label: Галерея проектов
+              help: Добавьте проекты стендов. Для каждого проекта можно загрузить несколько фотографий. Перетаскивайте элементы для изменения порядка.
+              collapsed: false
+              btnLabel: Добавить проект
+              fields:
+                project_info:
+                  type: section
+                  title: Информация о проекта
+                  underline: true
+                  
+                .title:
+                  type: text
+                  label: Название проекта
+                  placeholder: "Например: Эксклюзивный стенд для ООО 'Премиум' на WorldFood 2024"
+                  help: Полное название проекта с указанием клиента и выставки
+                  validate:
+                    required: true
+                    
+                .desc:
+                  type: textarea
+                  label: Описание проекта
+                  placeholder: Краткое описание особенностей и достижений проекта
+                  rows: 3
+                  help: Опишите ключевые особенности, результаты или интересные решения
+                  
+                project_images:
+                  type: section
+                  title: Фотографии проекта
+                  underline: true
+                  
+                .images:
+                  type: list
+                  label: Фотографии
+                  help: Добавьте несколько фотографий этого проекта
+                  btnLabel: Добавить фотографию
+                  collapsed: false
+                  fields:
+                    .image_upload:
+                      type: file
+                      label: Загрузить фотографию
+                      destination: 'user://pages/03/uslugi/01.razrabotka-stendov/03.ekskluziv'
+                      multiple: false
+                      limit: 1
+                      filesize: 8
+                      accept:
+                        - .jpg
+                        - .jpeg
+                        - .png
+                        - .gif
+                        - .webp
+                      help: Загрузите фотографию стенда. Рекомендуемое разрешение: от 1200x800px. Максимальный размер 8MB.
+                      avoid_overwriting: true
+                      random_name: false
+                      
+                    .caption:
+                      type: text
+                      label: Подпись к фотографии
+                      placeholder: 'Например: "Общий вид", "Зона переговоров", "Презентационная зона"'
+                      help: Краткое описание того, что показано на фотографии
+                      
+                    .is_main:
+                      type: toggle
+                      label: Главная фотография проекта
+                      help: Отметьте основную фотографию этого проекта
+                      highlight: 0
+                      default: 0
+                      options:
+                        1: Да
+                        0: Нет
+                      validate:
+                        type: bool
+                        
+                .construction_area:
+                  type: text
+                  label: Площадь застройки
+                  help: Укажите площадь в квадратных метрах
+                  placeholder: "100 м²"
+                  
+                .exhibition_name:
+                  type: text
+                  label: Название выставки
+                  help: Укажите название выставки или мероприятия
+                  placeholder: "Например: WorldFood Moscow 2024"
+                  
+                .company_name:
+                  type: text
+                  label: Название компании
+                  help: Укажите название компании-клиента
+                  placeholder: "Название компании-клиента"
+                  
+                .project_year:
+                  type: text
+                  label: Год проекта
+                  help: Год реализации проекта
+                  placeholder: "2024"
+                  size: small
+                    
+        options:
+          type: tab
+          title: PLUGIN_ADMIN.OPTIONS
+          fields:
+            ordering:
+              type: toggle
+              label: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX
+              help: PLUGIN_ADMIN.FOLDER_NUMERIC_PREFIX_HELP
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+            folder:
+              type: text
+              label: PLUGIN_ADMIN.FOLDER_NAME
+              help: PLUGIN_ADMIN.FOLDER_NAME_HELP
+              validate:
+                rule: slug
+            route:
+              type: parents
+              label: PLUGIN_ADMIN.PARENT
+              classes: fancy
+              validate:
+                required: true
+            slug:
+              type: text
+              label: PLUGIN_ADMIN.SLUG
+              help: PLUGIN_ADMIN.SLUG_HELP
+              validate:
+                rule: slug
+            visible:
+              type: toggle
+              label: PLUGIN_ADMIN.VISIBLE
+              help: PLUGIN_ADMIN.VISIBLE_HELP
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+            publish_date:
+              type: datetime
+              label: PLUGIN_ADMIN.PUBLISH_DATE
+              help: PLUGIN_ADMIN.PUBLISH_DATE_HELP
+              validate:
+                type: datetime
+            unpublish_date:
+              type: datetime
+              label: PLUGIN_ADMIN.UNPUBLISH_DATE
+              help: PLUGIN_ADMIN.UNPUBLISH_DATE_HELP
+              validate:
+                type: datetime
+            redirect:
+              type: text
+              label: PLUGIN_ADMIN.REDIRECT
+              help: PLUGIN_ADMIN.REDIRECT_HELP
+            page_media:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA 

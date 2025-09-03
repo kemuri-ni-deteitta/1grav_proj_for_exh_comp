@@ -1,0 +1,22 @@
+.git
+.gitignore
+
+# Grav runtime and artifacts
+cache/
+logs/
+tmp/
+backup/
+
+# Dev artifacts
+node_modules/
+composer.phar
+vendor/bin/
+
+# Misc
+*.log
+*.swp
+*.tmp
+Dockerfile
+now.json
+
+

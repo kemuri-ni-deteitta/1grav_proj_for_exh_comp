@@ -1,0 +1,11 @@
+state: enabled
+email: localadmin@example.com
+fullname: 'Local Admin'
+title: Admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: "$2y$10$FCt9lfsbqIDaWeKOzbLCIe/8zzrNNTd9bp4CeHrgEO1WBKolzK0j6"

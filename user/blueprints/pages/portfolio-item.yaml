@@ -1,0 +1,219 @@
+title: Portfolio Item
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+              
+            content:
+              type: markdown
+              label: PLUGIN_ADMIN.CONTENT
+              validate:
+                type: textarea
+                
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA
+
+        metadata:
+          type: tab
+          title: Метаданные проекта
+          fields:
+            metadata_section:
+              type: section
+              title: Информация о стенде
+              underline: true
+              
+            header.stand_type:
+              type: select
+              label: Тип стенда
+              help: Выберите тип стенда для этого проекта
+              options:
+                typovye: Типовой
+                nestandart: Нестандартный
+                ekskluziv: Эксклюзивный
+              validate:
+                required: true
+                
+            header.construction_area:
+              type: text
+              label: Площадь застройки
+              help: Укажите площадь в квадратных метрах (например, "36 м²")
+              placeholder: "36 м²"
+              validate:
+                required: true
+                
+            header.exhibition_name:
+              type: text
+              label: Название выставки
+              help: Укажите название выставки или мероприятия
+              placeholder: "Например: WorldFood Moscow 2024"
+              validate:
+                required: true
+                
+            header.company_name:
+              type: text
+              label: Название компании
+              help: Укажите название компании-клиента
+              placeholder: "Название компании-клиента"
+              validate:
+                required: true
+                
+            header.project_year:
+              type: text
+              label: Год проекта
+              help: Год реализации проекта
+              placeholder: "2024"
+              size: small
+
+        gallery:
+          type: tab
+          title: Галерея проекта
+          fields:
+            gallery_section:
+              type: section
+              title: Фотографии стенда
+              underline: true
+              
+            header.gallery:
+              type: list
+              style: vertical
+              label: Фотографии стенда
+              help: Добавьте несколько фотографий для полного представления о стенде. Перетаскивайте элементы для изменения порядка.
+              collapsed: false
+              btnLabel: Добавить фотографию
+              
+              fields:
+                .title:
+                  type: text
+                  label: Описание фотографии
+                  placeholder: 'Например: "Общий вид", "Зона переговоров", "Презентационная зона"'
+                  help: Краткое описание того, что показано на фотографии
+                  
+                .image_upload:
+                  type: file
+                  label: Загрузить изображение
+                  destination: '@self'
+                  multiple: false
+                  limit: 1
+                  filesize: 10
+                  accept:
+                    - .jpg
+                    - .jpeg
+                    - .png
+                    - .gif
+                    - .webp
+                                        help: "Загрузите фотографию стенда. Рекомендуемое разрешение: от 1200x800px. Максимальный размер 10MB."
+                  avoid_overwriting: true
+                  random_name: false
+                  
+                .is_main:
+                  type: toggle
+                  label: Главная фотография
+                  help: Отметьте основную фотографию проекта (будет отображаться первой в галерее)
+                  highlight: 0
+                  default: 0
+                  options:
+                    1: Да
+                    0: Нет
+                  validate:
+                    type: bool
+                    
+                .alt_text:
+                  type: text
+                  label: Альтернативный текст
+                  placeholder: Описание для доступности
+                  help: Описание изображения для людей с нарушениями зрения
+                  
+            gallery_settings:
+              type: section
+              title: Настройки галереи
+              underline: true
+              
+            header.gallery_display:
+              type: select
+              label: Тип отображения галереи
+              help: Выберите, как отображать фотографии на сайте
+              default: grid
+              options:
+                grid: Сетка (по умолчанию)
+                slider: Слайдер
+                masonry: Масонри-сетка
+                list: Список
+                
+            header.images_per_row:
+              type: select
+              label: Количество фотографий в ряду
+              help: Применяется только для сетки
+              default: 3
+              options:
+                2: 2 фотографии
+                3: 3 фотографии
+                4: 4 фотографии
+                
+            header.show_captions:
+              type: toggle
+              label: Показывать подписи к фотографиям
+              help: Отображать описания под фотографиями
+              highlight: 1
+              default: 1
+              options:
+                1: Да
+                0: Нет
+              validate:
+                type: bool
+
+        options:
+          type: tab
+          title: PLUGIN_ADMIN.OPTIONS
+          fields:
+            publishing:
+              type: section
+              title: PLUGIN_ADMIN.PUBLISHING
+              underline: true
+
+            header.published:
+              type: toggle
+              label: PLUGIN_ADMIN.PUBLISHED
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+            header.date:
+              type: datetime
+              label: PLUGIN_ADMIN.DATE
+              validate:
+                type: datetime
+
+            header.taxonomy.category:
+              type: selectize
+              size: large
+              label: Категории
+              help: Добавьте категории для фильтрации
+              validate:
+                type: commalist
+
+            header.taxonomy.tag:
+              type: selectize
+              size: large
+              label: Теги
+              help: Добавьте теги для поиска
+              validate:
+                type: commalist 

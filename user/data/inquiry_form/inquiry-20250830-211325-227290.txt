@@ -1,0 +1,10 @@
+Ваше имя: 323
+Компания: 123213
+Телефон: 131231312
+Email: 31232@312321.cmo
+Услуга: Разработка и строительство выставочных стендов
+Бюджет проекта: 323
+Описание проекта: 1312312
+Прикрепить файлы: {&quot;user-data:\/\/forms\/uploads\/20250830211323-5.jpg&quot;:{&quot;name&quot;:&quot;20250830211323-5.jpg&quot;,&quot;full_path&quot;:&quot;5.jpg&quot;,&quot;type&quot;:&quot;image\/jpeg&quot;,&quot;size&quot;:244921,&quot;path&quot;:&quot;user-data:\/\/forms\/uploads\/20250830211323-5.jpg&quot;}}
+Согласие на обработку персональных данных: 1
+

@@ -1,0 +1,79 @@
+title: Клиенты и партнёры
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              style: vertical
+              label: PLUGIN_ADMIN.TITLE
+              
+            header.menu:
+              type: text
+              label: PLUGIN_ADMIN.MENU
+              help: PLUGIN_ADMIN.MENU_HELP
+              
+            content:
+              type: editor
+              label: PLUGIN_ADMIN.CONTENT
+              help: Описание раздела партнёров
+              
+        partners:
+          type: tab
+          title: Партнёры
+          fields:
+            header.partners:
+              type: list
+              style: vertical
+              label: Список партнёров
+              help: Добавьте партнёров с логотипами и названиями
+              collapsed: false
+              btnLabel: Добавить партнёра
+              fields:
+                .name:
+                  type: text
+                  label: Название компании
+                  placeholder: Введите название компании-партнёра
+                  validate:
+                    required: true
+                .logo:
+                  type: file
+                  label: Логотип партнёра
+                  destination: 'user/pages/02.o-kompanii/02.klienty-i-partnery'
+                  multiple: false
+                  random_name: false
+                  avoid_overwriting: true
+                  filesize: 5
+                  accept:
+                    - image/*
+                  help: Загрузите логотип партнёра (JPEG, PNG, WebP, SVG)
+                  validate:
+                    required: true
+                .website:
+                  type: url
+                  label: Веб-сайт (необязательно)
+                  placeholder: https://example.com
+                  help: Ссылка на сайт партнёра
+
+                .featured:
+                  type: toggle
+                  label: Ключевой партнёр
+                  help: Отметить как основного партнёра
+                  highlight: 1
+                  default: 0
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool 

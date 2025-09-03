@@ -1,0 +1,287 @@
+{# Mobile Navigation Template - Only used on mobile devices #}
+{% import 'macros/macros.html.twig' as macros %}
+
+{# Ensure theme_config is available locally #}
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+{# Check if dropdowns are enabled in theme config #}
+{% set dropdown_enabled = theme_config.dropdowns.enabled ?? true %}
+{% set mobile_enabled = theme_config.mobile.enabled ?? true %}
+
+{# Inline CSS to remove orange button immediately #}
+<style>
+/* Keep hamburger lines unchanged; only color turns orange when active */
+.mobile-nav-toggle.active .nav-line-1,
+.mobile-nav-toggle.active .nav-line-2,
+.mobile-nav-toggle.active .nav-line {
+    transform: none !important;
+    background: #ff6600 !important;
+}
+</style>
+
+{# Mobile Navigation Container with Touch Support #}
+<nav class="mobile-navigation" id="mobile-nav">
+    <div class="mobile-nav-header">
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Mobile Navigation">
+            <span class="nav-line nav-line-1"></span>
+            <span class="nav-line nav-line-2"></span>
+        </button>
+        <div class="mobile-nav-brand">
+            <a href="{{ base_url == '' ? '/' : base_url }}" aria-label="Home">
+                <img src="{{ url('theme://images/logo/logo.gif') }}" alt="{{ site.title }}" class="mobile-logo" />
+            </a>
+        </div>
+    </div>
+    
+    <div class="mobile-nav-content" id="mobile-nav-content">
+        {% for p in pages.children.visible %}
+            {% if p.slug == 'otpravit-zayavku' %}
+            <div class="mobile-cta">
+                <a href="{{ p.url }}">{{ p.menu }}</a>
+            </div>
+            {% endif %}
+        {% endfor %}
+        <ul class="mobile-nav-menu">
+            {% for p in pages.children.visible %}
+                {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+                {% set has_children = p.children.visible.count > 0 %}
+                {% set show_children = has_children and (p.active or p.activeChild) %}
+                
+                {# For portfolio pages, don't show dropdown if all children are portfolio items #}
+                {% if p.slug == 'portfolio' %}
+                    {% set visible_children = [] %}
+                    {% for child in p.children.visible %}
+                        {% if child.template != 'portfolio-item' %}
+                            {% set visible_children = visible_children|merge([child]) %}
+                        {% endif %}
+                    {% endfor %}
+                    {% set has_children = visible_children|length > 0 %}
+                    {% set show_children = has_children and (p.active or p.activeChild) %}
+                {% endif %}
+                
+                {% if p.slug != 'otpravit-zayavku' %}
+                <li class="mobile-nav-item {% if has_children %}has-children{% endif %}" 
+                    data-has-children="{{ has_children ? 'true' : 'false' }}">
+                    <a href="{{ p.url }}" class="mobile-nav-link {% if active_page %}active{% endif %}">
+                        {{ p.menu }}
+                        {% if has_children %}
+                            <span class="mobile-dropdown-arrow">▼</span>
+                        {% endif %}
+                    </a>
+                    
+                    {% if has_children %}
+                        <ul class="mobile-dropdown-menu">
+                            {% for child in p.children.visible %}
+                                {# Skip portfolio items from navigation dropdown #}
+                                {% if not (p.slug == 'portfolio' and child.template == 'portfolio-item') %}
+                                    {% set child_active = (child.active or child.activeChild) ? 'active' : '' %}
+                                    {% set child_has_children = child.children.visible.count > 0 %}
+                                    
+                                    <li class="mobile-dropdown-item {% if child_has_children %}has-children{% endif %}">
+                                        <a href="{{ child.url }}" class="mobile-dropdown-link {% if child_active %}active{% endif %}">
+                                            {{ child.menu }}
+                                            {% if child_has_children %}
+                                                <span class="mobile-dropdown-arrow">▶</span>
+                                            {% endif %}
+                                        </a>
+                                        
+                                        {% if child_has_children %}
+                                            <ul class="mobile-child-dropdown-menu">
+                                                {% for grandchild in child.children.visible %}
+                                                    {% set grandchild_active = (grandchild.active or grandchild.activeChild) ? 'active' : '' %}
+                                                    <li class="mobile-child-dropdown-item">
+                                                        <a href="{{ grandchild.url }}" class="mobile-child-dropdown-link {% if grandchild_active %}active{% endif %}">
+                                                            {{ grandchild.menu }}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+{# Mobile Navigation JavaScript #}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const mobileNavContent = document.getElementById('mobile-nav-content');
+    const mobileNav = document.getElementById('mobile-nav');
+    const overlay = document.getElementById('mobile-nav-overlay');
+    let scrollPosition = 0;
+
+    function openMobileNav() {
+        mobileNavContent.classList.add('active');
+        mobileNavToggle.classList.add('active');
+        if (overlay) overlay.classList.add('active');
+        // Lock background scroll to prevent iOS rubber-band showing page under menu
+        scrollPosition = window.pageYOffset || document.documentElement.scrollTop || 0;
+        document.documentElement.classList.add('mobile-nav-open');
+        document.body.classList.add('mobile-nav-open');
+        document.body.style.top = '-' + scrollPosition + 'px';
+    }
+
+    function closeMobileNav() {
+        mobileNavContent.classList.remove('active');
+        mobileNavToggle.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
+        // Restore background scroll position
+        document.documentElement.classList.remove('mobile-nav-open');
+        document.body.classList.remove('mobile-nav-open');
+        document.body.style.top = '';
+        if (scrollPosition) {
+            window.scrollTo(0, scrollPosition);
+            scrollPosition = 0;
+        }
+    }
+    
+    // Toggle mobile navigation
+    if (mobileNavToggle && mobileNavContent) {
+        mobileNavToggle.addEventListener('click', function() {
+            if (mobileNavContent.classList.contains('active')) {
+                closeMobileNav();
+            } else {
+                openMobileNav();
+            }
+        });
+    }
+    
+    // Handle dropdown toggles
+    const dropdownItems = document.querySelectorAll('.mobile-nav-item.has-children');
+    dropdownItems.forEach(function(item) {
+        const link = item.querySelector('.mobile-nav-link');
+        const dropdown = item.querySelector('.mobile-dropdown-menu');
+        
+        if (link && dropdown) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                const arrow = link.querySelector('.mobile-dropdown-arrow');
+                if (arrow) {
+                    arrow.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+            });
+        }
+    });
+    
+    // Handle child dropdown toggles
+    const childDropdownItems = document.querySelectorAll('.mobile-dropdown-item.has-children');
+    childDropdownItems.forEach(function(item) {
+        const link = item.querySelector('.mobile-dropdown-link');
+        const dropdown = item.querySelector('.mobile-child-dropdown-menu');
+        
+        if (link && dropdown) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                const arrow = link.querySelector('.mobile-dropdown-arrow');
+                if (arrow) {
+                    arrow.style.transform = dropdown.classList.contains('active') ? 'rotate(90deg)' : 'rotate(0deg)';
+                }
+            });
+        }
+    });
+    
+    // Touch/swipe functionality for mobile navigation
+    let startX = 0;
+    let startY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let menuStartY = 0;
+    
+    // Touch start
+    function handleTouchStart(e) {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+    }
+    
+    // Touch move
+    function handleTouchMove(e) {
+        if (!startX || !startY) return;
+        
+        currentX = e.touches[0].clientX;
+        currentY = e.touches[0].clientY;
+        
+        const diffX = startX - currentX;
+        const diffY = startY - currentY;
+        
+        // Prevent default only if we're swiping horizontally
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 10) {
+            e.preventDefault();
+        }
+    }
+    
+    // Touch end
+    function handleTouchEnd(e) {
+        if (!startX || !startY) return;
+        
+        const diffX = startX - currentX;
+        const diffY = startY - currentY;
+        
+        // Swipe left to open navigation
+        if (diffX > 50 && Math.abs(diffY) < 50) {
+            openMobileNav();
+        }
+        // Swipe right to close navigation
+        else if (diffX < -50 && Math.abs(diffY) < 50) {
+            closeMobileNav();
+        }
+        
+        startX = 0;
+        startY = 0;
+        currentX = 0;
+        currentY = 0;
+    }
+    
+    // Add touch event listeners to the document
+    document.addEventListener('touchstart', handleTouchStart, { passive: false });
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd, { passive: false });
+
+    // Prevent rubber-band scrolling from leaking to the page when reaching
+    // the top or bottom of the mobile menu on iOS Safari
+    if (mobileNavContent) {
+        mobileNavContent.addEventListener('touchstart', function(e) {
+            menuStartY = e.touches[0].clientY;
+        }, { passive: true });
+
+        mobileNavContent.addEventListener('touchmove', function(e) {
+            const el = mobileNavContent;
+            const currentYMenu = e.touches[0].clientY;
+            const isScrollingUp = currentYMenu > menuStartY;
+            const atTop = el.scrollTop <= 0;
+            const atBottom = Math.ceil(el.scrollTop + el.clientHeight) >= el.scrollHeight;
+            if ((atTop && isScrollingUp) || (atBottom && !isScrollingUp)) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    }
+    
+    // Close navigation when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!mobileNav.contains(e.target) && mobileNavContent.classList.contains('active')) {
+            closeMobileNav();
+        }
+    });
+
+    if (overlay) {
+        overlay.addEventListener('click', function() {
+            closeMobileNav();
+        });
+        // Prevent touchmove on overlay from scrolling the page behind on iOS
+        overlay.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+    }
+});
+</script>

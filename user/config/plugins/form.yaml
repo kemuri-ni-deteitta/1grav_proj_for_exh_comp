@@ -1,0 +1,55 @@
+enabled: true
+built_in_css: true
+inline_css: true
+refresh_prevention: false
+client_side_validation: true
+inline_errors: false
+files:
+  multiple: true
+  limit: 10
+  destination: 'user-data://forms/uploads'
+  avoid_overwriting: true
+  random_name: false
+  accept:
+    - image/*
+    - application/pdf
+    - application/msword
+    - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    - application/vnd.ms-excel
+    - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    - application/vnd.ms-powerpoint
+    - application/vnd.openxmlformats-officedocument.presentationml.presentation
+    - application/zip
+    - application/x-rar-compressed
+    - text/plain
+  filesize: 32
+  field:
+    destination: 'user-data://forms/uploads'
+    avoid_overwriting: true
+    random_name: false
+    accept:
+      - image/*
+      - application/pdf
+      - application/msword
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      - application/vnd.ms-excel
+      - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      - application/vnd.ms-powerpoint
+      - application/vnd.openxmlformats-officedocument.presentationml.presentation
+      - application/zip
+      - application/x-rar-compressed
+      - text/plain
+    filesize: 32
+recaptcha:
+  version: 2-checkbox
+  theme: light
+  site_key: ''
+  secret_key: ''
+messages:
+  success: 'Спасибо! Ваше сообщение было успешно отправлено.'
+  error: 'Произошла ошибка при отправке формы. Попробуйте еще раз.'
+  required: 'Обязательное поле'
+  invalid_email: 'Неправильный email адрес'
+  invalid_phone: 'Неправильный номер телефона'
+  file_too_large: 'Файл слишком большой'
+  invalid_file_type: 'Неподдерживаемый тип файла' 

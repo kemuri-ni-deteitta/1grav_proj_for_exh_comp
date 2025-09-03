@@ -1,0 +1,10 @@
+Ваше имя: dasdas
+Компания: ds
+Телефон: 4234
+Email: krendel160575@gmail.com
+Услуга: Разработка и строительство выставочных стендов
+Бюджет проекта: 342321
+Описание проекта: dasdas
+Прикрепить файлы: {&quot;tmp:\/\/forms\/4biLv7GQWkq1nKh.jpg&quot;:{&quot;name&quot;:&quot;4biLv7GQWkq1nKh.jpg&quot;,&quot;full_path&quot;:&quot;5.jpg&quot;,&quot;type&quot;:&quot;image\/jpeg&quot;,&quot;size&quot;:244921,&quot;path&quot;:&quot;tmp:\/\/forms\/4biLv7GQWkq1nKh.jpg&quot;}}
+Согласие на обработку персональных данных: 1
+

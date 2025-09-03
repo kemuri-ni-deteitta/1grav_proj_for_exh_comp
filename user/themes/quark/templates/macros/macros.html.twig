@@ -1,0 +1,23 @@
+{% macro nav_loop(page, dropdown_enabled = true) %}
+  {% import _self as macros %}
+  {% for p in page.children.visible %}
+    {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+    {% set has_children = p.children.visible.count > 0 %}
+    {% set is_dropdown = dropdown_enabled and has_children %}
+    
+    <li class="nav-item{% if is_dropdown %} has-dropdown{% endif %}{% if active_page %} {{ active_page }}{% endif %}">
+      <a href="{{ p.url }}" class="nav-link{% if active_page %} {{ active_page }}{% endif %}{% if is_dropdown %} dropdown-toggle{% endif %}">
+        {{ p.menu }}
+        {% if is_dropdown %}
+          <span class="dropdown-arrow">▼</span>
+        {% endif %}
+      </a>
+      
+      {% if has_children %}
+        <ul class="dropdown-menu{% if not dropdown_enabled %} mobile-only{% endif %}">
+          {{ macros.nav_loop(p, dropdown_enabled) }}
+      </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+{% endmacro %}

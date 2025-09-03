@@ -1,0 +1,1045 @@
+/* Custom styles for Expo Land website */
+
+/* Orange accent color */
+:root {
+  --primary-color: #ff6600;
+  --dark-color: #2c2c2c;
+  --light-color: #ffffff;
+  --gray-color: #666666;
+}
+
+/* RESET BASICS */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+/* RESET BODY AND HTML TO REMOVE ANY TOP SPACING */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* EXPANDED NAVBAR - 80px height for more space */
+#header {
+  background: var(--light-color) !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important;
+  height: 80px !important;
+  min-height: 80px !important;
+  max-height: 80px !important;
+}
+
+/* Force header section to be properly positioned */
+#header.section {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 80px !important;
+}
+
+/* NUCLEAR OPTION - FORCE HEADER TO TOP WITH MAXIMUM SPECIFICITY */
+html body #page-wrapper #header,
+html body #page-wrapper #header.section,
+html body.header-fixed #page-wrapper #header,
+html body.header-fixed #page-wrapper #header.section,
+html body.header-animated #page-wrapper #header,
+html body.header-animated #page-wrapper #header.section,
+html body.header-fixed.header-animated #page-wrapper #header,
+html body.header-fixed.header-animated #page-wrapper #header.section,
+html body.header-fixed.header-animated.header-dark #page-wrapper #header,
+html body.header-fixed.header-animated.header-dark #page-wrapper #header.section,
+html body.header-fixed.header-animated.header-dark.header-transparent #page-wrapper #header,
+html body.header-fixed.header-animated.header-dark.header-transparent #page-wrapper #header.section,
+html body.header-fixed.header-animated.header-dark.header-transparent.sticky-footer #page-wrapper #header,
+html body.header-fixed.header-animated.header-dark.header-transparent.sticky-footer #page-wrapper #header.section,
+html body #header,
+html body #header.section,
+html body.header-fixed #header,
+html body.header-fixed #header.section,
+html body.header-animated #header,
+html body.header-animated #header.section,
+html body.header-fixed.header-animated #header,
+html body.header-fixed.header-animated #header.section,
+html body.header-fixed.header-animated.header-dark #header,
+html body.header-fixed.header-animated.header-dark #header.section,
+html body.header-fixed.header-animated.header-dark.header-transparent #header,
+html body.header-fixed.header-animated.header-dark.header-transparent #header.section,
+html body.header-fixed.header-animated.header-dark.header-transparent.sticky-footer #header,
+html body.header-fixed.header-animated.header-dark.header-transparent.sticky-footer #header.section,
+#header.scrolled,
+#header.section.scrolled {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  margin: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 80px !important;
+  min-height: 80px !important;
+  max-height: 80px !important;
+  transform: none !important;
+  translate: none !important;
+  background: var(--light-color) !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Force page wrapper to not interfere */
+#page-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure body content doesn't hide under fixed header */
+body.header-fixed #body-wrapper {
+  padding-top: 80px !important;
+}
+
+/* Navbar container */
+#header .container {
+  padding: 0 1.5rem !important;
+  margin: 0 auto !important;
+  max-width: 1200px !important;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Navbar flex layout */
+#header .navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 80px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  position: relative !important;
+}
+
+/* Logo section */
+#header .navbar-section.logo {
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
+}
+
+#header .navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#header .company-name {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+#header .company-logo {
+  max-height: 40px !important;
+  width: auto !important;
+  margin-right: 10px !important;
+}
+
+/* Desktop menu */
+#header .navbar-section.desktop-menu {
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
+
+}
+
+#header .navbar-section.desktop-menu .dropmenu {
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu > ul {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  height: 80px !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu > ul > li {
+  margin: 0 0.8rem !important;
+  white-space: nowrap;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
+  padding: 0.5rem 0 !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu > ul > li > a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.5rem 1rem !important;
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
+  font-weight: 500 !important;
+  font-size: 1.1rem !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  border-radius: 4px !important;
+  height: 40px !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu > ul > li > a:hover,
+#header .navbar-section.desktop-menu .dropmenu > ul > li > a:focus,
+#header .navbar-section.desktop-menu .dropmenu > ul > li > a.active {
+  color: var(--primary-color) !important;
+}
+
+/* Ensure the entire li element area is hoverable */
+#header .navbar-section.desktop-menu .dropmenu > ul > li {
+  cursor: pointer !important;
+}
+
+/* Dropdown menus */
+#header .navbar-section.desktop-menu .dropmenu ul ul {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  background: var(--light-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 6px !important;
+  min-width: 200px !important;
+  padding: 0.5rem 0 !important;
+  display: none !important;
+  z-index: 1001 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  margin-top: 4px !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu ul li:hover ul {
+  display: block !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu ul ul li {
+  margin: 0 !important;
+  display: block !important;
+  height: auto !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu ul ul li a {
+  padding: 0.6rem 1rem !important;
+  color: var(--dark-color) !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  display: block !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  border-radius: 0 !important;
+  height: auto !important;
+}
+
+#header .navbar-section.desktop-menu .dropmenu ul ul li a:hover {
+  background: #f8f9fa !important;
+  color: var(--primary-color) !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #header .navbar-section.desktop-menu {
+    display: none !important;
+  }
+  
+  #header .navbar {
+    padding: 0 1rem !important;
+  }
+  
+  #header .container {
+    padding: 0 1rem !important;
+  }
+  
+  #header .company-logo {
+    max-height: 32px !important;
+  }
+  
+  #header .company-name {
+    font-size: 1rem !important;
+  }
+  
+  /* Ensure mobile menu button is properly positioned */
+  .mobile-menu .button_container {
+    top: 18px !important;
+  }
+}
+
+/* Enhanced Dropdown Menu Styles */
+#custom-header nav ul li {
+  position: relative;
+}
+
+#custom-header nav ul li ul {
+  /* Smooth dropdown animation */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  /* Increase the hoverable area slightly */
+  margin-top: 2px !important;
+}
+
+/* Enhanced dropdown arrow with smooth rotation */
+#custom-header nav ul li span {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+#custom-header nav ul li:hover span {
+  transform: rotate(180deg);
+}
+
+/* Better dropdown item spacing and hover effects */
+#custom-header nav ul li ul li {
+  transition: background-color 0.15s ease;
+}
+
+#custom-header nav ul li ul li:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Improved hover area for main navigation items */
+#custom-header nav ul li > a {
+  position: relative;
+  z-index: 100002;
+}
+
+/* Create a larger hit area for dropdown navigation */
+#custom-header nav ul li ul {
+  /* Add some padding to the dropdown container for easier navigation */
+  padding-top: 8px !important;
+  margin-top: -4px !important;
+}
+
+/* Create an invisible bridge between menu item and dropdown for easier navigation */
+#custom-header nav ul li ul::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -10px;
+  right: -10px;
+  height: 16px;
+  background: transparent;
+  z-index: 100000;
+}
+
+/* Smooth fade-in animation when dropdown becomes visible */
+#custom-header nav ul li ul[style*="display: block"] {
+  animation: fadeInDropdown 0.2s ease forwards;
+}
+
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced dropdown arrow styling */
+.dropdown-arrow {
+  display: inline-block !important;
+  transition: transform 0.3s ease !important;
+  font-size: 0.7rem !important;
+  margin-left: 5px !important;
+  color: inherit !important;
+  opacity: 0.7 !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Arrow rotation for different dropdown states */
+.dropdown-arrow.rotated {
+  transform: rotate(180deg) !important;
+}
+
+.dropdown-arrow.rotated-right {
+  transform: rotate(90deg) !important;
+}
+
+/* Visual feedback for clickable dropdown items */
+#custom-header nav ul li > a[onclick] {
+  cursor: pointer !important;
+}
+
+#custom-header nav ul li > a[onclick]:hover .dropdown-arrow {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+}
+
+/* Better visual separation for dropdown items */
+.dropdown-menu li:not(:last-child),
+.child-dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Enhanced focus states for accessibility */
+#custom-header nav ul li > a:focus,
+.dropdown-menu li a:focus,
+.child-dropdown-menu li a:focus {
+  /* Removed orange outline */
+}
+
+/* Mobile dropdown fallback (if needed) */
+@media (max-width: 768px) {
+  #custom-header nav ul li ul {
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  #custom-header nav ul li ul li a {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.6rem !important;
+  }
+}
+
+/* REMOVE EXTRA SPACING FROM SECTIONS */
+section.section {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+section.section:first-of-type {
+  padding-top: 1rem !important;
+}
+
+/* MODERN BUTTONS */
+.btn, .button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover, .button:hover {
+  background-color: #e55a00;
+  border-color: #e55a00;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 102, 0, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--gray-color);
+  color: var(--gray-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--gray-color);
+  color: var(--light-color);
+}
+
+/* CUSTOM FORM BUTTONS - HIGHER SPECIFICITY */
+.form-actions .custom-form-btn,
+button.custom-form-btn,
+.btn.custom-form-btn,
+.button.custom-form-btn,
+a.custom-form-btn,
+.text-center .custom-form-btn {
+  padding: 20px 40px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  margin: 0 10px !important;
+  min-width: 220px !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  text-transform: none !important;
+  height: auto !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+.form-actions .custom-form-btn.btn-primary,
+button.custom-form-btn.btn-primary,
+.btn.custom-form-btn.btn-primary,
+.button.custom-form-btn.btn-primary,
+a.custom-form-btn.btn-primary,
+.text-center .custom-form-btn.btn-primary {
+  background-color: #ff6b35 !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
+}
+
+.form-actions .custom-form-btn.btn-primary:hover,
+button.custom-form-btn.btn-primary:hover,
+.btn.custom-form-btn.btn-primary:hover,
+.button.custom-form-btn.btn-primary:hover,
+a.custom-form-btn.btn-primary:hover,
+.text-center .custom-form-btn.btn-primary:hover {
+  background-color: #e55a2b !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+}
+
+.form-actions .custom-form-btn.btn-secondary,
+button.custom-form-btn.btn-secondary,
+.btn.custom-form-btn.btn-secondary,
+.button.custom-form-btn.btn-secondary,
+a.custom-form-btn.btn-secondary,
+.text-center .custom-form-btn.btn-secondary {
+  background-color: #f8f9fa !important;
+  color: #6c757d !important;
+  border: 2px solid #dee2e6 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.form-actions .custom-form-btn.btn-secondary:hover,
+button.custom-form-btn.btn-secondary:hover,
+.btn.custom-form-btn.btn-secondary:hover,
+.button.custom-form-btn.btn-secondary:hover,
+a.custom-form-btn.btn-secondary:hover,
+.text-center .custom-form-btn.btn-secondary:hover {
+  background-color: #e9ecef !important;
+  color: #495057 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* MODERN LINKS */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e55a00;
+}
+
+/* MAIN PAGE BULLETED LIST LINKS ONLY */
+body:has(#body-wrapper) #body-wrapper ul li a,
+body:has(.content) .content ul li a {
+  color: var(--primary-color) !important;
+}
+
+body:has(#body-wrapper) #body-wrapper ul li a:hover,
+body:has(.content) .content ul li a:hover {
+  color: #e55a00 !important;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* MAIN CONTENT TEXT - LARGER FONT SIZES */
+body {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+/* Make lists more readable */
+ul li, ol li {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Strong text in lists */
+ul li strong, ol li strong {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Italic text */
+em, i {
+  font-size: 1.3rem;
+}
+
+/* MODERN FORMS */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  color: #2c2c2c !important;
+  background-color: #ffffff !important;
+  font-weight: 400;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+/* Form labels styling */
+.form-label {
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Required field indicator */
+.form-label .required {
+  color: #ff6600;
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+
+/* COMPLETE RESET - Remove all potential conflicting styles */
+select.form-select,
+.form-select,
+select[name*="service"],
+select[name*="service"].form-select,
+select[name*="service"]:focus,
+select[name*="service"]:not(:focus),
+select[name*="service"]:active,
+select[name*="service"]:hover {
+  /* Reset all properties */
+  all: unset !important;
+  
+  /* Set basic form styling */
+  display: block !important;
+  width: 100% !important;
+  padding: 0.9rem 1rem !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
+  
+  /* Force text visibility */
+  color: #2c2c2c !important;
+  background-color: #ffffff !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  
+  /* Webkit specific */
+  -webkit-appearance: none !important;
+  -webkit-text-fill-color: #2c2c2c !important;
+  text-fill-color: #2c2c2c !important;
+  
+  /* Add dropdown arrow */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 1rem center !important;
+  background-size: 0.5rem 0.6rem !important;
+  padding-right: 2.5rem !important;
+}
+
+/* Ensure options are visible */
+.form-select option,
+select[name*="service"] option {
+  color: #2c2c2c !important;
+  background-color: #ffffff !important;
+  padding: 0.5rem !important;
+}
+
+.form-select option:checked,
+select[name*="service"] option:checked {
+  color: #2c2c2c !important;
+  background-color: #f8f9fa !important;
+  font-weight: bold !important;
+}
+
+/* Focus state */
+select.form-select:focus,
+.form-select:focus,
+select[name*="service"]:focus {
+  border-color: #ff6600 !important;
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1) !important;
+  outline: none !important;
+  color: #2c2c2c !important;
+  background-color: #ffffff !important;
+}
+
+/* CARDS AND SECTIONS */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* UTILITIES */
+.text-center {
+  text-align: center;
+}
+
+.mt-0 { margin-top: 0 !important; }
+.mt-1 { margin-top: 0.5rem !important; }
+.mt-2 { margin-top: 1rem !important; }
+.mt-3 { margin-top: 1.5rem !important; }
+.mt-4 { margin-top: 2rem !important; }
+
+.mb-0 { margin-bottom: 0 !important; }
+.mb-1 { margin-bottom: 0.5rem !important; }
+.mb-2 { margin-bottom: 1rem !important; }
+.mb-3 { margin-bottom: 1.5rem !important; }
+.mb-4 { margin-bottom: 2rem !important; }
+
+.pt-0 { padding-top: 0 !important; }
+.pt-1 { padding-top: 0.5rem !important; }
+.pt-2 { padding-top: 1rem !important; }
+.pt-3 { padding-top: 1.5rem !important; }
+.pt-4 { padding-top: 2rem !important; }
+
+.pb-0 { padding-bottom: 0 !important; }
+.pb-1 { padding-bottom: 0.5rem !important; }
+.pb-2 { padding-bottom: 1rem !important; }
+.pb-3 { padding-bottom: 1.5rem !important; }
+.pb-4 { padding-bottom: 2rem !important; }
+
+/* Contact Information Styles */
+.contact-info-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border-left: 4px solid var(--primary-color);
+}
+
+.contact-info-section h2 {
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.contact-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-item h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.contact-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #e55a00;
+  text-decoration: underline;
+}
+
+.phone-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phone-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.phone-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.phone-description {
+  color: var(--gray-color);
+  font-weight: normal;
+  font-style: italic;
+}
+
+.map-section {
+  margin: 2rem 0;
+}
+
+.map-section h2 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.map-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f0f8ff;
+  border-radius: 4px;
+  border-left: 3px solid #0066cc;
+  font-size: 0.9rem;
+  color: var(--gray-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info-section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .contact-info-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .contact-item p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== Grav Form: position Dropzone remove button to the right of the file ===== */
+/* Ensure preview acts as positioning context */
+.dropzone.files-upload .dz-preview {
+  position: relative;
+}
+
+/* Move the remove link (cross) to the top-right of the file tile */
+.dropzone.files-upload .dz-preview .dz-remove {
+  position: absolute !important;
+  top: 6px !important;
+  right: 6px !important;
+  display: block !important; /* ensure it's visible even when not hovering */
+  width: 22px !important;
+  height: 22px !important;
+  line-height: 22px !important;
+  text-align: center !important;
+  background: rgba(0, 0, 0, 0.55) !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  text-decoration: none !important;
+  border: 0 !important;
+  font-weight: 700 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  font-size: 0 !important; /* hide long label text */
+  z-index: 50 !important; /* above image/details overlays */
+}
+
+/* Optional hover emphasis */
+.dropzone.files-upload .dz-preview .dz-remove:hover {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Show a cross symbol instead of the text label */
+.dropzone.files-upload .dz-preview .dz-remove:before {
+  content: '×';
+  font-size: 16px !important;
+  line-height: 22px !important;
+  display: inline-block !important;
+}
+
+/* ===== MOBILE CTA BUTTON - REMOVE ORANGE RECTANGLE ===== */
+/* Nuclear option to remove any unwanted elements from mobile CTA button */
+.mobile-cta a,
+.mobile-cta a *,
+.mobile-cta a::before,
+.mobile-cta a::after,
+.mobile-cta a *::before,
+.mobile-cta a *::after {
+  all: unset !important;
+  content: none !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: none !important;
+  background: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  z-index: -9999 !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  border-color: transparent !important;
+  outline-color: transparent !important;
+  background-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Restore the button itself with clean styling */
+.mobile-cta a {
+  all: revert !important;
+  display: block !important;
+  background: #034880 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  padding: 12px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 1 !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  font-size: 1rem !important;
+  line-height: 1.2 !important;
+}
+
+/* Ensure no hover effects add unwanted elements */
+.mobile-cta a:hover,
+.mobile-cta a:focus,
+.mobile-cta a:active,
+.mobile-cta a:visited {
+  border-color: transparent !important;
+  outline-color: transparent !important;
+  background-color: #023a6b !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}

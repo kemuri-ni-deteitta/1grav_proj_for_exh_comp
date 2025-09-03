@@ -1,0 +1,10 @@
+Ваше имя: 321321312
+Компания: 312321
+Телефон: 31321321
+Email: 31231@3131.com
+Услуга: Дизайн выставочных стендов
+Бюджет проекта: 321312
+Описание проекта: 32121
+Прикрепить файлы: {&quot;user-data:\/\/forms\/uploads\/2.jpg&quot;:{&quot;name&quot;:&quot;2.jpg&quot;,&quot;full_path&quot;:&quot;2.jpg&quot;,&quot;type&quot;:&quot;image\/jpeg&quot;,&quot;size&quot;:287975,&quot;path&quot;:&quot;user-data:\/\/forms\/uploads\/2.jpg&quot;}}
+Согласие на обработку персональных данных: 1
+

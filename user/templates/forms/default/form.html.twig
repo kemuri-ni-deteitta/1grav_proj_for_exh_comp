@@ -1,0 +1,311 @@
+{% if form.message %}
+    <div class="alert alert-{{ form.message_type ?: 'info' }} alert-dismissible fade show" role="alert">
+        {{ form.message|raw }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{% endif %}
+
+<form method="post" action="{{ page.url }}" enctype="multipart/form-data">
+    {% for field in form.fields %}
+        {% if field.type == 'file' and field.multiple %}
+            <div class="form-group mb-4">
+                <label for="{{ field.name }}" class="form-label fw-bold">{{ field.label|t }}</label>
+                {% if field.help %}
+                    <div class="form-text mb-2">{{ field.help|t }}</div>
+                {% endif %}
+                <div class="file-upload-wrapper">
+                    <input type="file" 
+                           name="{{ field.name }}[]" 
+                           id="{{ field.name }}" 
+                           class="form-control file-input" 
+                           multiple
+                           accept="{{ field.accept|join(',') }}"
+                           data-max-files="{{ field.limit }}"
+                           data-max-size="{{ field.filesize * 1024 * 1024 }}">
+                    <div class="file-drop-zone" data-field="{{ field.name }}">
+                        <div class="file-drop-text">
+                            <i class="fas fa-cloud-upload-alt fa-2x mb-2"></i>
+                            <p>Перетащите файлы сюда или нажмите для выбора</p>
+                            <small class="text-muted">
+                                Максимум {{ field.limit }} файлов, до {{ field.filesize }}MB каждый
+                            </small>
+                        </div>
+                    </div>
+                    <div class="file-preview" id="preview-{{ field.name }}"></div>
+                </div>
+            </div>
+        {% else %}
+            {% include "forms/fields/#{field.type}/#{field.type}.html.twig" %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="form-actions">
+        {% for button in form.buttons %}
+            <button type="{{ button.type|default('submit') }}" 
+                    class="btn {{ button.classes|default('btn-primary') }} custom-form-btn">
+                {{ button.value|t }}
+            </button>
+        {% endfor %}
+    </div>
+
+    {{ nonce_field('form', 'form-nonce')|raw }}
+</form>
+
+<style>
+    .file-upload-wrapper {
+        position: relative;
+    }
+    
+    .file-input {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .file-drop-zone {
+        border: 2px dashed #dee2e6;
+        border-radius: 8px;
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .file-drop-zone:hover,
+    .file-drop-zone.dragover {
+        border-color: #007cba;
+        background-color: #e3f2fd;
+    }
+    
+    .file-drop-text {
+        color: #6c757d;
+    }
+    
+    .file-drop-text i {
+        color: #007cba;
+    }
+    
+    .file-preview {
+        margin-top: 15px;
+    }
+    
+    .file-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 8px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .file-info {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .file-icon {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+    
+    .file-details {
+        flex: 1;
+    }
+    
+    .file-name {
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+    
+    .file-size {
+        font-size: 0.85em;
+        color: #6c757d;
+    }
+    
+    .file-remove {
+        background: none;
+        border: none;
+        color: #dc3545;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+    
+    .file-remove:hover {
+        background-color: #f8d7da;
+    }
+    
+    .file-error {
+        border-color: #dc3545;
+        background-color: #f8d7da;
+    }
+    
+    .file-error .file-name {
+        color: #dc3545;
+    }
+    
+    /* Custom button styling */
+    .form-actions {
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .custom-form-btn {
+        padding: 20px 40px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        margin: 0 10px !important;
+        min-width: 220px !important;
+        transition: all 0.3s ease !important;
+        border: none !important;
+        text-transform: none !important;
+    }
+    
+    .custom-form-btn.btn-primary {
+        background-color: #ff6b35 !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
+    }
+    
+    .custom-form-btn.btn-primary:hover {
+        background-color: #e55a2b !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+    }
+    
+    .custom-form-btn.btn-secondary {
+        background-color: #f8f9fa !important;
+        color: #6c757d !important;
+        border: 2px solid #dee2e6 !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .custom-form-btn.btn-secondary:hover {
+        background-color: #e9ecef !important;
+        color: #495057 !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fileInputs = document.querySelectorAll('.file-input[multiple]');
+        
+        fileInputs.forEach(input => {
+            const dropZone = input.parentElement.querySelector('.file-drop-zone');
+            const preview = input.parentElement.querySelector('.file-preview');
+            const maxFiles = parseInt(input.dataset.maxFiles) || 10;
+            const maxSize = parseInt(input.dataset.maxSize) || 10 * 1024 * 1024;
+            
+            // Handle file selection
+            input.addEventListener('change', function(e) {
+                handleFiles(e.target.files, preview, maxFiles, maxSize);
+            });
+            
+            // Handle drag and drop
+            dropZone.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                dropZone.classList.add('dragover');
+            });
+            
+            dropZone.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                dropZone.classList.remove('dragover');
+            });
+            
+            dropZone.addEventListener('drop', function(e) {
+                e.preventDefault();
+                dropZone.classList.remove('dragover');
+                handleFiles(e.dataTransfer.files, preview, maxFiles, maxSize);
+            });
+            
+            // Click to select files
+            dropZone.addEventListener('click', function() {
+                input.click();
+            });
+        });
+        
+        function handleFiles(files, preview, maxFiles, maxSize) {
+            const currentFiles = preview.children.length;
+            const remainingSlots = maxFiles - currentFiles;
+            
+            if (files.length > remainingSlots) {
+                alert(`Можно загрузить максимум ${maxFiles} файлов. У вас уже ${currentFiles} файлов.`);
+                return;
+            }
+            
+            Array.from(files).forEach(file => {
+                if (file.size > maxSize) {
+                    alert(`Файл "${file.name}" слишком большой. Максимальный размер: ${formatFileSize(maxSize)}`);
+                    return;
+                }
+                
+                addFilePreview(file, preview);
+            });
+        }
+        
+        function addFilePreview(file, preview) {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'file-item';
+            
+            const fileIcon = getFileIcon(file.name);
+            const fileSize = formatFileSize(file.size);
+            
+            fileItem.innerHTML = `
+                <div class="file-info">
+                    <div class="file-icon">${fileIcon}</div>
+                    <div class="file-details">
+                        <div class="file-name">${file.name}</div>
+                        <div class="file-size">${fileSize}</div>
+                    </div>
+                </div>
+                <button type="button" class="file-remove" onclick="this.parentElement.remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            
+            preview.appendChild(fileItem);
+        }
+        
+        function getFileIcon(filename) {
+            const ext = filename.split('.').pop().toLowerCase();
+            const icons = {
+                'pdf': '📄',
+                'doc': '📝',
+                'docx': '📝',
+                'xls': '📊',
+                'xlsx': '📊',
+                'ppt': '📋',
+                'pptx': '📋',
+                'jpg': '🖼️',
+                'jpeg': '🖼️',
+                'png': '🖼️',
+                'gif': '🖼️',
+                'zip': '📦',
+                'rar': '📦',
+                'txt': '📄'
+            };
+            return icons[ext] || '📄';
+        }
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 байт';
+            const k = 1024;
+            const sizes = ['байт', 'КБ', 'МБ', 'ГБ'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+    });
+</script> 

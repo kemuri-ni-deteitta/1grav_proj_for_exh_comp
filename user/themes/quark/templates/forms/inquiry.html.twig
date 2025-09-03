@@ -1,0 +1,51 @@
+<h2 style="margin:0 0 12px 0;">Новая заявка с сайта</h2>
+<table cellpadding="6" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;max-width:700px;">
+  <tbody>
+    <tr>
+      <td style="background:#f7f7f7;width:220px;">Ваше имя</td>
+      <td>{{ form.value.name|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Компания</td>
+      <td>{{ form.value.company|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Телефон</td>
+      <td>{{ form.value.phone|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Email</td>
+      <td>{{ form.value.email|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Услуга</td>
+      <td>{{ form.value.service|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Бюджет проекта</td>
+      <td>{{ form.value.budget|e }}</td>
+    </tr>
+    <tr>
+      <td style="background:#f7f7f7;">Описание проекта</td>
+      <td>{{ form.value.message|nl2br }}</td>
+    </tr>
+    {% if form.value.files %}
+    <tr>
+      <td style="background:#f7f7f7;">Файлы</td>
+      <td>
+        <ul>
+          {% for file in form.value.files %}
+            {% set item = (file is iterable and file|keys is not empty) ? (file|first) : file %}
+            <li>{{ (item.name ?? item)|e }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td style="background:#f7f7f7;">Согласие на обработку персональных данных</td>
+      <td>{{ form.value.agreement ? 'Да' : 'Нет' }}</td>
+    </tr>
+  </tbody>
+  </table>
+

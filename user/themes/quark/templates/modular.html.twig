@@ -1,0 +1,135 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .main-content .content {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #2c2c2c;
+        }
+        
+        .main-content .content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6600;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .main-content .content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2c2c2c;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        
+        .main-content .content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c2c2c;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .main-content .content p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #2c2c2c;
+        }
+        
+        .main-content .content ul, 
+        .main-content .content ol {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #2c2c2c;
+        }
+        
+        .main-content .content li {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #2c2c2c;
+        }
+        
+        .main-content .content strong {
+            font-weight: 600;
+            color: #2c2c2c;
+        }
+        
+        .main-content .content em {
+            font-style: italic;
+            color: #2c2c2c;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    {% if show_onpage_menu %}
+        {% do assets.add('theme://js/singlepagenav.min.js') %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+
+{% block bottom %}
+    {{ parent() }}
+    {% if show_onpage_menu %}
+        <script>
+        // singlePageNav initialization & configuration
+        $('ul.navigation').singlePageNav({
+            offset: $('#header').outerHeight(),
+            filter: ':not(.external)',
+            updateHash: true,
+            currentClass: 'active'
+        });
+        </script>
+    {% endif %}
+{% endblock %}
+
+{% block header_navigation %}
+    {% if show_onpage_menu %}
+        <ul class="navigation">
+        {% for module in page.collection() if module.header.visible is not same as(false) %}
+            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
+            <li><a class="{{ current_module }}" href="#{{ module.menu|hyphenize }}">{{ module.menu }}</a></li>
+        {% endfor %}
+        {% for mitem in site.menu %}
+            <li>
+                <a {% if mitem.class %}class="{{ mitem.class }}"{% endif %} href="{{ mitem.url }}">
+                    {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+                    {{ mitem.text }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {{  parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block hero %}
+    {% for module in page.collection() if module.template == 'modular/hero' %}
+        <div id="{{ module.menu|hyphenize }}"></div>
+        {{ module.content|raw }}
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+    {# Display main page content first #}
+    {% if page.content %}
+        {{ page.content|raw }}
+    {% endif %}
+    
+    {# Then display modular content #}
+    {% for module in page.collection() if module.template != 'modular/hero' %}
+        <div id="{{ module.menu|hyphenize }}"></div>
+        {{ module.content|raw }}
+    {% endfor %}
+{% endblock %}

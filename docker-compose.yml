@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  grav:
+    container_name: grav-admin
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx.conf:/etc/nginx/sites-available/default:ro
+      - ./certbot/www:/var/www/certbot
+      - ./certs/fullchain.pem:/etc/ssl/certs/fullchain.pem:ro
+      - ./certs/privkey.pem:/etc/ssl/certs/privkey.pem:ro
+    restart: unless-stopped
