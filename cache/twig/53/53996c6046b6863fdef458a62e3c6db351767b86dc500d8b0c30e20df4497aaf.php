@@ -84,6 +84,6 @@ class __TwigTemplate_eded232dd859f50092ac2b860dff70984d8c85ebc2eeaf99d46a6fb4a2d
     {% include 'forms/default/fields.html.twig' with {name: field.name|parent_field, fields: field.fields, fallback_field: 'column', cols: cols} %}
 </div>
 {% endblock %}
-", "forms/fields/columns/columns.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/columns/columns.html.twig");
+", "forms/fields/columns/columns.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/columns/columns.html.twig");
     }
 }

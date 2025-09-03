@@ -318,6 +318,6 @@ class __TwigTemplate_c9e02e555d5685c9029317085a8c15f4fb075010ac925d76719a8143c8e
         </div>
     </div>
 {% endblock %}
-", "forms/fields/editor/editor.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
+", "forms/fields/editor/editor.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
     }
 }

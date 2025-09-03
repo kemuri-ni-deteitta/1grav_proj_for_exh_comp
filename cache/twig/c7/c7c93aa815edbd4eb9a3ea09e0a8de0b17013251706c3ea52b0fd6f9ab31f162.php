@@ -262,6 +262,6 @@ class __TwigTemplate_9da5ae4266b8b6e3b342e8b6b663a7f239c98cbbc6e3912d645967bce42
 </div>
 {% endif %}
 {% endblock %}
-", "forms/fields/pagemedia/pagemedia.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/pagemedia/pagemedia.html.twig");
+", "forms/fields/pagemedia/pagemedia.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/pagemedia/pagemedia.html.twig");
     }
 }

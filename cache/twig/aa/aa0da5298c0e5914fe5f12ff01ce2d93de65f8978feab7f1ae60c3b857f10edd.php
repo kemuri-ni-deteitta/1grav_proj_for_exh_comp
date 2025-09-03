@@ -46,7 +46,7 @@ class __TwigTemplate_108b9695f93bb8c3906def3b888134bff3935168641939755962bfe4b2f
 
     ";
         // line 10
-        $this->loadTemplate("partials/page-move.html.twig", "partials/page-move.html.twig", 10, "1350216479")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/page-move.html.twig", "partials/page-move.html.twig", 10, "24779869")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 14
         echo "
     ";
@@ -114,13 +114,13 @@ class __TwigTemplate_108b9695f93bb8c3906def3b888134bff3935168641939755962bfe4b2f
         <button class=\"button primary\" name=\"task\" value=\"save\" form=\"blueprints\">{{ \"PLUGIN_ADMIN.CONTINUE\"|t }}</button>
     </div>
 </form>
-", "partials/page-move.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/page-move.html.twig");
+", "partials/page-move.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/page-move.html.twig");
     }
 }
 
 
 /* partials/page-move.html.twig */
-class __TwigTemplate_108b9695f93bb8c3906def3b888134bff3935168641939755962bfe4b2f42e16___1350216479 extends \Twig\Template
+class __TwigTemplate_108b9695f93bb8c3906def3b888134bff3935168641939755962bfe4b2f42e16___24779869 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -204,6 +204,6 @@ class __TwigTemplate_108b9695f93bb8c3906def3b888134bff3935168641939755962bfe4b2f
         <button class=\"button primary\" name=\"task\" value=\"save\" form=\"blueprints\">{{ \"PLUGIN_ADMIN.CONTINUE\"|t }}</button>
     </div>
 </form>
-", "partials/page-move.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/page-move.html.twig");
+", "partials/page-move.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/page-move.html.twig");
     }
 }

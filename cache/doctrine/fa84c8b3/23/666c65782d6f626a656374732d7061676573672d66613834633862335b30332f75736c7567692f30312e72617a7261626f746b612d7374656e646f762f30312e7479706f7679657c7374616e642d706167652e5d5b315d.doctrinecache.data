@@ -1,0 +1,86 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:36:"03/uslugi/razrabotka-stendov/typovye";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:6:{s:5:"title";s:27:"Типовые стенды";s:11:"media_order";s:35:"nagr2.jpg,solver_logo.jpg,nagr2.jpg";s:4:"menu";s:27:"Типовые стенды";s:7:"visible";b:1;s:8:"template";s:10:"stand-page";s:7:"gallery";a:2:{i:0;a:3:{s:5:"title";s:6:"stand1";s:4:"desc";s:24:"stand1stand1stand1stand1";s:12:"image_upload";a:1:{s:52:"user/pages/03/uslugi/01.razrabotka-stendov/nagr2.jpg";a:5:{s:4:"name";s:9:"nagr2.jpg";s:9:"full_path";s:9:"nagr2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:366793;s:4:"path";s:52:"user/pages/03/uslugi/01.razrabotka-stendov/nagr2.jpg";}}}i:1;a:7:{s:5:"title";s:9:"stand1222";s:4:"desc";s:31:"Описание проекта";s:12:"image_upload";a:1:{s:58:"user/pages/03/uslugi/01.razrabotka-stendov/solver_logo.jpg";a:5:{s:4:"name";s:15:"solver_logo.jpg";s:9:"full_path";s:15:"solver_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:15591;s:4:"path";s:58:"user/pages/03/uslugi/01.razrabotka-stendov/solver_logo.jpg";}}s:17:"construction_area";s:2:"15";s:15:"exhibition_name";s:21:"Выставка 2024";s:12:"company_name";s:16:"Компания";s:12:"project_year";s:4:"2024";}}}s:11:"frontmatter";s:1075:"title: 'Типовые стенды'
+media_order: 'nagr2.jpg,solver_logo.jpg,nagr2.jpg'
+menu: 'Типовые стенды'
+visible: true
+template: stand-page
+gallery:
+    -
+        title: stand1
+        desc: stand1stand1stand1stand1
+        image_upload:
+            user/pages/03/uslugi/01.razrabotka-stendov/nagr2.jpg:
+                name: nagr2.jpg
+                full_path: nagr2.jpg
+                type: image/jpeg
+                size: 366793
+                path: user/pages/03/uslugi/01.razrabotka-stendov/nagr2.jpg
+    -
+        title: stand1222
+        desc: 'Описание проекта'
+        image_upload:
+            user/pages/03/uslugi/01.razrabotka-stendov/solver_logo.jpg:
+                name: solver_logo.jpg
+                full_path: solver_logo.jpg
+                type: image/jpeg
+                size: 15591
+                path: user/pages/03/uslugi/01.razrabotka-stendov/solver_logo.jpg
+        construction_area: '15'
+        exhibition_name: 'Выставка 2024'
+        company_name: 'Компания'
+        project_year: '2024'";s:8:"markdown";s:3865:"# Типовые стенды
+
+## Быстро. Надежно. Выгодно
+
+Ограниченность бюджета не означает, что стенд должен быть невыразительным. Типовые стенды — это эффективное решение для компаний, которые хотят достойно представить свой бренд на выставке, не переплачивая за индивидуальный дизайн.
+
+### Что представляют собой типовые стенды
+
+Типовые стенды изготавливаются на основе стандартных алюминиевых профилей (OCTANORM, MAXIMA). Эти системы проверены временем и используются на выставках по всему миру.
+
+### Базовая комплектация включает:
+
+- **Алюминиевый каркас** — прочная основа конструкции
+- **Стеновые панели** — белые или цветные, с возможностью брендирования
+- **Ковровое покрытие** — комфортное для посетителей
+- **Освещение** — равномерное освещение всего стенда
+- **Фризовая панель** — с названием компании и логотипом
+- **Базовая мебель** — стол, стулья, стойка-ресепшн
+
+### Преимущества типовых стендов:
+
+- **Быстрая установка** — монтаж за 2-3 часа
+- **Доступная цена** — оптимальное соотношение цена-качество
+- **Надежность** — проверенные конструкции
+- **Универсальность** — подходят для любых выставок
+- **Возможность модификации** — добавление брендинга и дополнительных элементов
+
+### Когда выбирать типовой стенд?
+
+- **Первое участие в выставке** — знакомство с форматом без больших вложений
+- **Небольшой бюджет** — максимальная эффективность при минимальных затратах
+- **Срочная подготовка** — когда времени на разработку индивидуального дизайна нет
+- **Участие в нескольких выставках подряд** — универсальное решение
+
+### Возможности кастомизации
+
+Даже типовой стенд можно сделать уникальным:
+
+- **Брендирование** — нанесение логотипа, фирменных цветов
+- **Дополнительное оборудование** — экраны, стеллажи, витрины
+- **Графические элементы** — баннеры, постеры, информационные панели
+- **Специальная мебель** — под конкретные потребности
+
+### Стоимость и сроки
+
+- **Площадь стенда**: от 9 до 100 кв.м
+- **Стоимость**: от 15 000 рублей за кв.м
+- **Срок изготовления**: 3-5 рабочих дней
+- **Монтаж**: в день открытия выставки
+
+### Мы гарантируем:
+
+- Качественные материалы
+- Профессиональный монтаж
+- Техническую поддержку во время выставки
+- Демонтаж и вывоз конструкций ";}s:7:"storage";a:8:{s:3:"key";s:36:"03/uslugi/razrabotka-stendov/typovye";s:11:"storage_key";s:54:"03/uslugi/01.razrabotka-stendov/01.typovye|stand-page.";s:8:"template";s:10:"stand-page";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:0:"";a:1:{s:10:"stand-page";i:1756928896;}}s:8:"checksum";s:32:"30a852b644472456354e9117bcfc7464";s:6:"exists";b:1;s:4:"lang";s:0:"";}}

@@ -1,0 +1,2 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:17:"o-kompanii/otzyvy";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:0:{}s:11:"frontmatter";s:0:"";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:17:"o-kompanii/otzyvy";s:11:"storage_key";s:23:"02.o-kompanii/03.otzyvy";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:7:"default";i:1756928896;}}s:8:"checksum";s:32:"e0094451249242a4d3c9a1c8cf35abb4";}}

@@ -96,6 +96,6 @@ class __TwigTemplate_c83d8a300ac99af21c2ecba9fdc74d3b771e3c725522502e1da371265b9
     {% if field.disabled or isDisabledToggleable %}disabled=\"disabled\"{% endif %}
     name=\"{{ (scope ~ field.name)|fieldName }}\"
     value=\"{{ blueprints.name }}\" />
-{% endblock %}", "forms/fields/blueprint/blueprint.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/blueprint/blueprint.html.twig");
+{% endblock %}", "forms/fields/blueprint/blueprint.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/blueprint/blueprint.html.twig");
     }
 }

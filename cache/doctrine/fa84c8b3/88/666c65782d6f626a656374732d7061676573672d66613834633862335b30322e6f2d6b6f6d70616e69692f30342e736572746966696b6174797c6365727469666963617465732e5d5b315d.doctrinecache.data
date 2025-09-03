@@ -1,0 +1,42 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:22:"o-kompanii/sertifikaty";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:7:{s:5:"title";s:40:"Сертификаты и награды";s:11:"media_order";s:25:"nagr2.jpg,solver_logo.jpg";s:4:"menu";s:22:"Сертификаты";s:7:"visible";b:1;s:8:"template";s:12:"certificates";s:12:"certificates";a:4:{i:0;a:2:{s:5:"title";s:29:"Сертификат ISO 9001";s:12:"image_upload";a:1:{s:49:"user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg";a:5:{s:4:"name";s:9:"nagr2.jpg";s:9:"full_path";s:9:"nagr2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:366793;s:4:"path";s:49:"user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg";}}}i:1;a:3:{s:5:"title";s:6:"321312";s:11:"description";s:4:"3231";s:12:"image_upload";a:1:{s:55:"user/pages/02.o-kompanii/04.sertifikaty/solver_logo.jpg";a:5:{s:4:"name";s:15:"solver_logo.jpg";s:9:"full_path";s:15:"solver_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:15591;s:4:"path";s:55:"user/pages/02.o-kompanii/04.sertifikaty/solver_logo.jpg";}}}i:2;a:3:{s:5:"title";s:4:"3231";s:11:"description";s:6:"312312";s:12:"image_upload";a:1:{s:49:"user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg";a:5:{s:4:"name";s:9:"nagr2.jpg";s:9:"full_path";s:9:"nagr2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:366793;s:4:"path";s:49:"user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg";}}}i:3;a:2:{s:5:"title";s:6:"312321";s:11:"description";s:6:"312321";}}s:8:"page-toc";a:1:{s:6:"active";b:0;}}s:11:"frontmatter";s:1314:"title: 'Сертификаты и награды'
+media_order: 'nagr2.jpg,solver_logo.jpg'
+menu: Сертификаты
+visible: true
+template: certificates
+certificates:
+    -
+        title: 'Сертификат ISO 9001'
+        image_upload:
+            user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg:
+                name: nagr2.jpg
+                full_path: nagr2.jpg
+                type: image/jpeg
+                size: 366793
+                path: user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg
+    -
+        title: '321312'
+        description: '3231'
+        image_upload:
+            user/pages/02.o-kompanii/04.sertifikaty/solver_logo.jpg:
+                name: solver_logo.jpg
+                full_path: solver_logo.jpg
+                type: image/jpeg
+                size: 15591
+                path: user/pages/02.o-kompanii/04.sertifikaty/solver_logo.jpg
+    -
+        title: '3231'
+        description: '312312'
+        image_upload:
+            user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg:
+                name: nagr2.jpg
+                full_path: nagr2.jpg
+                type: image/jpeg
+                size: 366793
+                path: user/pages/02.o-kompanii/04.sertifikaty/nagr2.jpg
+    -
+        title: '312321'
+        description: '312321'
+page-toc:
+    active: false";s:8:"markdown";s:43:"# Сертификаты и награды
+";}s:7:"storage";a:8:{s:3:"key";s:22:"o-kompanii/sertifikaty";s:11:"storage_key";s:42:"02.o-kompanii/04.sertifikaty|certificates.";s:8:"template";s:12:"certificates";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:0:"";a:1:{s:12:"certificates";i:1756928896;}}s:8:"checksum";s:32:"f380935f209caeba689bc6e27f5c25bb";s:6:"exists";b:1;s:4:"lang";s:0:"";}}

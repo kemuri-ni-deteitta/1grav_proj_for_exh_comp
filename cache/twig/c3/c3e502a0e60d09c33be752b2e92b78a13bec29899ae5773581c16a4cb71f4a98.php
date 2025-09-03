@@ -93,6 +93,6 @@ class __TwigTemplate_f832118162fbc0d691d37b8f95174c696343085c3d273a9a1bb8c91e23e
         return new Source("{% for meta in page.metadata %}
     <meta {% if meta.name %}name=\"{{ meta.name|e }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv|e }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset|e }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property|e }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content|raw }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "/var/www/gravExpo/system/templates/partials/metadata.html.twig");
+", "partials/metadata.html.twig", "/home/ivan/expoGroupOnServer/system/templates/partials/metadata.html.twig");
     }
 }

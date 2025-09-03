@@ -1,0 +1,90 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:29:"o-kompanii/klienty-i-partnery";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:6:{s:5:"title";s:34:"Клиенты и партнёры";s:4:"menu";s:34:"Клиенты и партнёры";s:7:"visible";b:1;s:8:"template";s:8:"partners";s:8:"partners";a:4:{i:0;a:3:{s:12:"company_name";s:73:"Инженерно-консалтинговая фирма "СОЛВЕР"";s:7:"website";s:22:"https://www.apple.com/";s:11:"logo_upload";a:1:{s:62:"user/pages/02.o-kompanii/02.klienty-i-partnery/solver_logo.jpg";a:5:{s:4:"name";s:15:"solver_logo.jpg";s:9:"full_path";s:15:"solver_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:15591;s:4:"path";s:62:"user/pages/02.o-kompanii/02.klienty-i-partnery/solver_logo.jpg";}}}i:1;a:2:{s:12:"company_name";s:52:"Группа компаний "Тетрасвязь"";s:11:"logo_upload";a:1:{s:61:"user/pages/02.o-kompanii/02.klienty-i-partnery/tetra_logo.jpg";a:5:{s:4:"name";s:14:"tetra_logo.jpg";s:9:"full_path";s:14:"tetra_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:7626;s:4:"path";s:61:"user/pages/02.o-kompanii/02.klienty-i-partnery/tetra_logo.jpg";}}}i:2;a:2:{s:12:"company_name";s:48:"Рекламное агентство "ИДЕЯ"";s:11:"logo_upload";a:1:{s:61:"user/pages/02.o-kompanii/02.klienty-i-partnery/medor_logo.jpg";a:5:{s:4:"name";s:14:"medor_logo.jpg";s:9:"full_path";s:14:"medor_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:9238;s:4:"path";s:61:"user/pages/02.o-kompanii/02.klienty-i-partnery/medor_logo.jpg";}}}i:3;a:2:{s:12:"company_name";s:58:"Фармацевтическая компания "SANDOZ"";s:11:"logo_upload";a:1:{s:62:"user/pages/02.o-kompanii/02.klienty-i-partnery/sandoz_logo.jpg";a:5:{s:4:"name";s:15:"sandoz_logo.jpg";s:9:"full_path";s:15:"sandoz_logo.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:8077;s:4:"path";s:62:"user/pages/02.o-kompanii/02.klienty-i-partnery/sandoz_logo.jpg";}}}}s:8:"page-toc";a:1:{s:6:"active";b:0;}}s:11:"frontmatter";s:1839:"title: 'Клиенты и партнёры'
+menu: 'Клиенты и партнёры'
+visible: true
+template: partners
+partners:
+    -
+        company_name: 'Инженерно-консалтинговая фирма "СОЛВЕР"'
+        website: 'https://www.apple.com/'
+        logo_upload:
+            user/pages/02.o-kompanii/02.klienty-i-partnery/solver_logo.jpg:
+                name: solver_logo.jpg
+                full_path: solver_logo.jpg
+                type: image/jpeg
+                size: 15591
+                path: user/pages/02.o-kompanii/02.klienty-i-partnery/solver_logo.jpg
+    -
+        company_name: 'Группа компаний "Тетрасвязь"'
+        logo_upload:
+            user/pages/02.o-kompanii/02.klienty-i-partnery/tetra_logo.jpg:
+                name: tetra_logo.jpg
+                full_path: tetra_logo.jpg
+                type: image/jpeg
+                size: 7626
+                path: user/pages/02.o-kompanii/02.klienty-i-partnery/tetra_logo.jpg
+    -
+        company_name: 'Рекламное агентство "ИДЕЯ"'
+        logo_upload:
+            user/pages/02.o-kompanii/02.klienty-i-partnery/medor_logo.jpg:
+                name: medor_logo.jpg
+                full_path: medor_logo.jpg
+                type: image/jpeg
+                size: 9238
+                path: user/pages/02.o-kompanii/02.klienty-i-partnery/medor_logo.jpg
+    -
+        company_name: 'Фармацевтическая компания "SANDOZ"'
+        logo_upload:
+            user/pages/02.o-kompanii/02.klienty-i-partnery/sandoz_logo.jpg:
+                name: sandoz_logo.jpg
+                full_path: sandoz_logo.jpg
+                type: image/jpeg
+                size: 8077
+                path: user/pages/02.o-kompanii/02.klienty-i-partnery/sandoz_logo.jpg
+page-toc:
+    active: false";s:8:"markdown";s:2282:"# Наши клиенты и партнёры
+
+Мы гордимся долгосрочными отношениями с ведущими компаниями различных отраслей. Наши клиенты и партнёры доверяют нам свои самые важные проекты.
+
+## Отрасли наших клиентов
+
+- **Промышленность** - заводы, производственные комплексы
+- **Технологии** - IT-компании, стартапы
+- **Финансы** - банки, страховые компании
+- **Торговля** - розничные сети, торговые центры
+- **Образование** - университеты, школы
+- **Медицина** - клиники, медицинские центры
+
+## Статистика сотрудничества
+
+- **Более 500** успешно реализованных проектов
+- **95%** клиентов возвращаются повторно
+- **15+ лет** средний срок сотрудничества с ключевыми партнёрами
+- **100%** соблюдение сроков выполнения
+
+## Наши преимущества для партнёров
+
+### Индивидуальный подход
+- Персональный менеджер проекта
+- Гибкие условия сотрудничества
+- Учёт специфики отрасли
+
+### Комплексные решения
+- Полный цикл работ
+- Собственное производство
+- Логистические услуги
+
+### Гарантии качества
+- Сертифицированные материалы
+- Контроль на всех этапах
+- Гарантийное обслуживание
+
+## Хотите стать нашим партнёром?
+
+**Преимущества работы с нами:**
+- Прозрачное ценообразование
+- Соблюдение договорённостей
+- Высокое качество работ
+- Индивидуальные условия
+
+[Свяжитесь с нами](/kontakty) для обсуждения условий сотрудничества. ";}s:7:"storage";a:8:{s:3:"key";s:29:"o-kompanii/klienty-i-partnery";s:11:"storage_key";s:46:"02.o-kompanii/02.klienty-i-partnery|default.ru";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:7:"default";i:1756928896;}}s:8:"checksum";s:32:"3bedb0450b2b05da09a1a53fa8281f41";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

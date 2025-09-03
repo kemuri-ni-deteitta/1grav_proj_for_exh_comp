@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1756582842,
-    'size' => 1900,
+    'modified' => 1756929875,
+    'size' => 1902,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -12,7 +12,7 @@ return [
         'logo_text' => '',
         'body_classes' => '',
         'content_padding' => true,
-        'twofa_enabled' => true,
+        'twofa_enabled' => false,
         'sidebar' => [
             'activate' => 'tab',
             'hover_delay' => 100,
@@ -33,9 +33,9 @@ return [
             'show_modular' => true
         ],
         'session' => [
-            'timeout' => 1800
+            'timeout' => 86400
         ],
-        'edit_mode' => 'normal',
+        'edit_mode' => 'expert',
         'frontend_preview_target' => 'inline',
         'show_github_msg' => true,
         'admin_icons' => 'line-awesome',

@@ -668,7 +668,7 @@ class __TwigTemplate_b29e57074a0406a040345b7051d0058eeb4c91ee68c812e24d4d21cefb1
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
+", "partials/base-root.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/base-root.html.twig");
     }
     private $deferred;
 }

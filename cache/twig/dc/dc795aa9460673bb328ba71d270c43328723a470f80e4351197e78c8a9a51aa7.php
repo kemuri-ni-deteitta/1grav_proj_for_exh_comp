@@ -120,6 +120,6 @@ class __TwigTemplate_50f72af9380d8aa15dbe766030dca838a1aa4ec3c5f4f51920852e1abb6
         </div>
     {% endfor %}
     </div>
-{% endif %}", "partials/messages.html.twig", "/var/www/gravExpo/user/themes/quark/templates/partials/messages.html.twig");
+{% endif %}", "partials/messages.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/partials/messages.html.twig");
     }
 }

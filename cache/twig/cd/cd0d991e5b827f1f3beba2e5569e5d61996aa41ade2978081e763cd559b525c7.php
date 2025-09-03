@@ -238,6 +238,6 @@ class __TwigTemplate_a3ba1d61e845a75b0daa9418d309537474b711816ee3d2383328c1f3fea
         </div>
     </nav>
 {% endif %}
-", "partials/nav.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/nav.html.twig");
+", "partials/nav.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/nav.html.twig");
     }
 }

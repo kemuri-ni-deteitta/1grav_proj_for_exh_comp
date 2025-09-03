@@ -1,0 +1,65 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:8:"kontakty";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:11:{s:5:"title";s:16:"Контакты";s:4:"menu";s:16:"Контакты";s:7:"visible";b:1;s:8:"template";s:8:"contacts";s:6:"phones";a:2:{i:0;a:2:{s:6:"number";s:6:"+77777";s:11:"description";s:9:"Офис1";}i:1;a:2:{s:6:"number";s:6:"+77777";s:11:"description";s:9:"Офис2";}}s:7:"address";s:58:"г. Москва, ул. Кульнева, д. 3, стр. 1";s:11:"coordinates";s:20:"55.742711, 37.523106";s:6:"emails";a:2:{i:0;a:2:{s:5:"email";s:13:"info@expo1.ru";s:11:"description";s:10:"Имэил";}i:1;a:2:{s:5:"email";s:14:"2info@expo1.ru";s:11:"description";s:23:"Второй имэил";}}s:15:"social_networks";a:2:{i:0;a:2:{s:8:"platform";s:8:"telegram";s:8:"username";s:7:"@userTg";}i:1;a:2:{s:8:"platform";s:2:"vk";s:8:"username";s:15:"https://vk.com/";}}s:9:"blueprint";s:8:"contacts";s:6:"header";a:5:{s:6:"phones";a:3:{i:0;a:2:{s:6:"number";s:18:"+7 (495) 123-45-67";s:11:"description";s:23:"Главный офис";}i:1;a:2:{s:6:"number";s:18:"+7 (495) 123-45-68";s:11:"description";s:23:"Отдел продаж";}i:2;a:2:{s:6:"number";s:18:"+7 (495) 123-45-69";s:11:"description";s:41:"Техническая поддержка";}}s:7:"address";s:58:"г. Москва, ул. Кульнева, д. 3, стр. 1";s:11:"coordinates";s:20:"55.742711, 37.523106";s:6:"emails";a:3:{i:0;a:2:{s:5:"email";s:15:"expo@yandex.com";s:11:"description";s:25:"Общие вопросы";}i:1;a:2:{s:5:"email";s:18:"sales@expo-land.ru";s:11:"description";s:23:"Отдел продаж";}i:2;a:2:{s:5:"email";s:20:"support@expo-land.ru";s:11:"description";s:41:"Техническая поддержка";}}s:15:"social_networks";a:3:{i:0;a:3:{s:8:"platform";s:8:"telegram";s:8:"username";s:31:"https://t.me/expo_land_official";s:11:"description";s:27:"Основной канал";}i:1;a:3:{s:8:"platform";s:2:"vk";s:8:"username";s:24:"https://vk.com/expo_land";s:11:"description";s:31:"Группа ВКонтакте";}i:2;a:3:{s:8:"platform";s:7:"youtube";s:8:"username";s:36:"https://youtube.com/ExpoLandOfficial";s:11:"description";s:23:"Канал на YouTube";}}}}s:11:"frontmatter";s:1890:"title: Контакты
+menu: Контакты
+visible: true
+template: contacts
+phones:
+    -
+        number: '+77777'
+        description: Офис1
+    -
+        number: '+77777'
+        description: Офис2
+address: 'г. Москва, ул. Кульнева, д. 3, стр. 1'
+coordinates: '55.742711, 37.523106'
+emails:
+    -
+        email: info@expo1.ru
+        description: Имэил
+    -
+        email: 2info@expo1.ru
+        description: 'Второй имэил'
+social_networks:
+    -
+        platform: telegram
+        username: '@userTg'
+    -
+        platform: vk
+        username: 'https://vk.com/'
+blueprint: contacts
+header:
+    phones:
+        -
+            number: '+7 (495) 123-45-67'
+            description: 'Главный офис'
+        -
+            number: '+7 (495) 123-45-68'
+            description: 'Отдел продаж'
+        -
+            number: '+7 (495) 123-45-69'
+            description: 'Техническая поддержка'
+    address: 'г. Москва, ул. Кульнева, д. 3, стр. 1'
+    coordinates: '55.742711, 37.523106'
+    emails:
+        -
+            email: expo@yandex.com
+            description: 'Общие вопросы'
+        -
+            email: sales@expo-land.ru
+            description: 'Отдел продаж'
+        -
+            email: support@expo-land.ru
+            description: 'Техническая поддержка'
+    social_networks:
+        -
+            platform: telegram
+            username: 'https://t.me/expo_land_official'
+            description: 'Основной канал'
+        -
+            platform: vk
+            username: 'https://vk.com/expo_land'
+            description: 'Группа ВКонтакте'
+        -
+            platform: youtube
+            username: 'https://youtube.com/ExpoLandOfficial'
+            description: 'Канал на YouTube'";s:8:"markdown";s:0:"";}s:7:"storage";a:9:{s:3:"key";s:8:"kontakty";s:11:"storage_key";s:22:"08.kontakty|default.ru";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:7:"default";i:1756928896;}}s:8:"children";a:1:{s:15:"01.forma-svyazi";b:0;}s:8:"checksum";s:32:"0f524301c7cf8db39fb5c8c98f65f728";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

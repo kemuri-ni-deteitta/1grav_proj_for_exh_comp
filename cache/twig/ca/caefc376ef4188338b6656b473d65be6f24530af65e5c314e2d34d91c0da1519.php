@@ -114,6 +114,6 @@ class __TwigTemplate_51acd5b8c824d0fb514ee215d2d857f6cac6a8961c11a93f3274ab8d6ee
         <div class=\"{{ message.scope }} alert\">{{ message.message|raw }}</div>
     {%- endfor -%}
 </div>
-", "partials/messages.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
+", "partials/messages.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/messages.html.twig");
     }
 }

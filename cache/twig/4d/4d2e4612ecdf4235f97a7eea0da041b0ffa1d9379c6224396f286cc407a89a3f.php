@@ -134,6 +134,6 @@ class __TwigTemplate_864862e3af1159f2e042e0fae5ac92bbe9b14556f9ce5990ad38e3e172f
         <a class=\"front-end hint--left\" data-hint=\"{{ \"PLUGIN_ADMIN.VIEW_SITE_TIP\"|t }}\" target=\"_blank\" href=\"{{ base_url_relative_frontend }}\"> <i class=\"fa fa-external-link\"></i></a>
     </div>
 {% endif %}
-", "partials/logo.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
+", "partials/logo.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
     }
 }

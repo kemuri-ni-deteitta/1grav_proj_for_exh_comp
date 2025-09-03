@@ -64,6 +64,6 @@ class __TwigTemplate_716d186df22d786d957085f7958494dcb70ccf2446ec71ffcc0a4b10f90
     {
         return new Source("{% block content_surround %}
 {% block content %}{% endblock %}
-{% endblock %}", "blocks/base.html.twig", "/var/www/gravExpo/user/themes/quark/templates/blocks/base.html.twig");
+{% endblock %}", "blocks/base.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/blocks/base.html.twig");
     }
 }

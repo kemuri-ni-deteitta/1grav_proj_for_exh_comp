@@ -78,6 +78,6 @@ class __TwigTemplate_3af317e72e98242b28750268197983bc3ea1b0c299e4e6cdbb9dc455046
 {% else %}
     <a href=\"https://getgrav.org\" target=\"_blank\" rel=\"noopener noreferrer\">Grav</a> v<span class=\"grav-version\">{{ constant('GRAV_VERSION') }}</span> - Admin v{{ admin_version }} - {{ \"PLUGIN_ADMIN.WAS_MADE_WITH\"|t|lower }} <i class=\"fa fa-heart-o pulse\"></i> {{ \"PLUGIN_ADMIN.BY\"|t|lower }} <a href=\"https://trilby.media\" target=\"_blank\" rel=\"noopener noreferrer\">Trilby Media</a>.
 {% endif %}
-", "partials/footer.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/footer.html.twig");
+", "partials/footer.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/footer.html.twig");
     }
 }

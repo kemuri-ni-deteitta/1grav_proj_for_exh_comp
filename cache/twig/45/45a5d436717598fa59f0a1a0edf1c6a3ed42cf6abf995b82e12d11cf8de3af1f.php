@@ -804,6 +804,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-", "partials/navigation-mobile.html.twig", "/var/www/gravExpo/user/themes/quark/templates/partials/navigation-mobile.html.twig");
+", "partials/navigation-mobile.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/partials/navigation-mobile.html.twig");
     }
 }

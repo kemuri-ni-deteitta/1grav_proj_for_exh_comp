@@ -1,0 +1,29 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:9:"portfolio";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:9:{s:5:"title";s:18:"Портфолио";s:8:"taxonomy";a:1:{s:8:"category";a:1:{i:0;s:9:"portfolio";}}s:4:"menu";s:18:"Портфолио";s:10:"child_type";s:14:"portfolio-item";s:8:"routable";b:1;s:12:"cache_enable";b:0;s:7:"visible";b:1;s:8:"template";s:9:"portfolio";s:7:"content";a:2:{s:5:"items";s:14:"@self.children";s:5:"order";a:2:{s:2:"by";s:7:"default";s:3:"dir";s:3:"asc";}}}s:11:"frontmatter";s:275:"title: Портфолио
+taxonomy:
+    category:
+        - portfolio
+menu: Портфолио
+child_type: portfolio-item
+routable: true
+cache_enable: false
+visible: true
+template: portfolio
+content:
+    items: '@self.children'
+    order:
+        by: default
+        dir: asc";s:8:"markdown";s:1121:"# Портфолио
+
+## Наши реализованные проекты
+
+Ознакомьтесь с нашими работами по созданию выставочных стендов различных типов. Каждый проект — это уникальное решение, адаптированное под конкретные цели и требования клиента.
+
+### Типы стендов в портфолио:
+
+- [**Типовые стенды**](/uslugi/razrabotka-stendov/typovye) –  надежные и экономичные решения
+-  [**Нестандартные стенды**](/uslugi/razrabotka-stendov/nestandart) – индивидуальный подход с элементами эксклюзивности  
+- [**Эксклюзивные стенды**](/uslugi/razrabotka-stendov/ekskluziv) – полностью авторские проекты
+
+
+Воспользуйтесь фильтрами для просмотра проектов по типам стендов, размеру площади или названию выставки. ";}s:7:"storage";a:9:{s:3:"key";s:9:"portfolio";s:11:"storage_key";s:25:"07.portfolio|portfolio.ru";s:8:"template";s:9:"portfolio";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:9:"portfolio";i:1756928896;}}s:8:"children";a:1:{s:17:"01.sample-project";b:0;}s:8:"checksum";s:32:"ff68b149ffa8fe88947745dafb93e351";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

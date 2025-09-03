@@ -1,0 +1,130 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:16:"otpravit-zayavku";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:5:{s:5:"title";s:31:"Отправить заявку";s:4:"menu";s:29:"Оставить заявку";s:7:"visible";b:1;s:8:"template";s:4:"form";s:4:"form";a:4:{s:4:"name";s:12:"inquiry_form";s:6:"fields";a:9:{i:0;a:5:{s:4:"name";s:4:"name";s:5:"label";s:15:"Ваше имя";s:11:"placeholder";s:30:"Введите ваше имя";s:4:"type";s:4:"text";s:8:"validate";a:1:{s:8:"required";b:1;}}i:1;a:4:{s:4:"name";s:7:"company";s:5:"label";s:16:"Компания";s:11:"placeholder";s:33:"Название компании";s:4:"type";s:4:"text";}i:2;a:5:{s:4:"name";s:5:"phone";s:5:"label";s:14:"Телефон";s:11:"placeholder";s:18:"+7 (xxx) xxx-xx-xx";s:4:"type";s:3:"tel";s:8:"validate";a:1:{s:8:"required";b:1;}}i:3;a:5:{s:4:"name";s:5:"email";s:5:"label";s:5:"Email";s:11:"placeholder";s:14:"your@email.com";s:4:"type";s:5:"email";s:8:"validate";a:1:{s:8:"required";b:1;}}i:4;a:7:{s:4:"name";s:7:"service";s:4:"type";s:6:"select";s:4:"size";s:4:"long";s:5:"label";s:12:"Услуга";s:4:"help";s:195:"Выберите тип услуги, который вас интересует. Это поможет нам подготовить персонализированное предложение";s:7:"options";a:4:{s:0:"";s:29:"Выберите услугу";s:11:"development";s:88:"Разработка и строительство выставочных стендов";s:6:"design";s:50:"Дизайн выставочных стендов";s:12:"full_service";s:48:"Полный выставочный сервис";}s:8:"validate";a:1:{s:8:"required";b:1;}}i:5;a:5:{s:4:"name";s:6:"budget";s:5:"label";s:27:"Бюджет проекта";s:11:"placeholder";s:43:"Укажите бюджет в рублях";s:4:"type";s:4:"text";s:8:"validate";a:1:{s:8:"required";b:1;}}i:6;a:5:{s:4:"name";s:7:"message";s:5:"label";s:31:"Описание проекта";s:11:"placeholder";s:97:"Расскажите о вашем проекте, требованиях и пожеланиях";s:4:"type";s:8:"textarea";s:8:"validate";a:1:{s:8:"required";b:1;}}i:7;a:11:{s:4:"name";s:5:"files";s:5:"label";s:31:"Прикрепить файлы";s:4:"type";s:4:"file";s:8:"multiple";b:1;s:5:"limit";i:10;s:8:"filesize";i:32;s:11:"destination";s:25:"user-data://forms/uploads";s:17:"avoid_overwriting";b:1;s:11:"random_name";b:0;s:6:"accept";a:16:{i:0;s:4:".pdf";i:1;s:4:".doc";i:2;s:5:".docx";i:3;s:4:".xls";i:4;s:5:".xlsx";i:5;s:4:".ppt";i:6;s:5:".pptx";i:7;s:4:".jpg";i:8;s:5:".jpeg";i:9;s:4:".png";i:10;s:4:".gif";i:11;s:4:".bmp";i:12;s:5:".tiff";i:13;s:4:".zip";i:14;s:4:".rar";i:15;s:4:".txt";}s:4:"help";s:303:"Можно загрузить до 10 файлов. Поддерживаемые форматы: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, изображения (JPG, PNG, GIF, BMP, TIFF), архивы (ZIP, RAR), текстовые файлы (TXT). Максимальный размер файла: 32MB.";}i:8;a:4:{s:4:"name";s:9:"agreement";s:5:"label";s:78:"Согласие на обработку персональных данных";s:4:"type";s:8:"checkbox";s:8:"validate";a:1:{s:8:"required";b:1;}}}s:7:"buttons";a:2:{i:0;a:3:{s:4:"type";s:6:"submit";s:5:"value";s:31:"Отправить заявку";s:7:"classes";s:31:"btn btn-primary custom-form-btn";}i:1;a:3:{s:4:"type";s:5:"reset";s:5:"value";s:16:"Очистить";s:7:"classes";s:33:"btn btn-secondary custom-form-btn";}}s:7:"process";a:4:{i:0;a:1:{s:5:"email";a:7:{s:4:"from";s:31:"{{ config.plugins.email.from }}";s:2:"to";a:2:{i:0;s:16:"expoland@mail.ru";i:1;s:23:"stand@expoland-group.ru";}s:8:"reply_to";s:22:"{{ form.value.email }}";s:7:"subject";s:52:"[Заявка] Новая заявка с сайта";s:4:"body";s:38:"{% include "forms/inquiry.txt.twig" %}";s:11:"attachments";a:1:{i:0;s:5:"files";}s:16:"process_markdown";b:0;}}i:1;a:1:{s:4:"save";a:5:{s:10:"fileprefix";s:8:"inquiry-";s:10:"dateformat";s:9:"Ymd-His-u";s:9:"extension";s:3:"txt";s:4:"body";s:35:"{% include "forms/data.txt.twig" %}";s:11:"destination";s:29:"user-data://forms/submissions";}}i:2;a:1:{s:7:"message";s:101:"Спасибо за заявку! Мы свяжемся с вами в ближайшее время.";}i:3;a:1:{s:7:"display";s:8:"thankyou";}}}}s:11:"frontmatter";s:4584:"title: 'Отправить заявку'
+menu: Оставить заявку
+visible: true
+template: form
+form:
+    name: inquiry_form
+    fields:
+        -
+            name: name
+            label: 'Ваше имя'
+            placeholder: 'Введите ваше имя'
+            type: text
+            validate:
+                required: true
+        -
+            name: company
+            label: Компания
+            placeholder: 'Название компании'
+            type: text
+        -
+            name: phone
+            label: Телефон
+            placeholder: '+7 (xxx) xxx-xx-xx'
+            type: tel
+            validate:
+                required: true
+        -
+            name: email
+            label: Email
+            placeholder: your@email.com
+            type: email
+            validate:
+                required: true
+        -
+            name: service
+            type: select
+            size: long
+            label: Услуга
+            help: 'Выберите тип услуги, который вас интересует. Это поможет нам подготовить персонализированное предложение'
+            options:
+                '': 'Выберите услугу'
+                development: 'Разработка и строительство выставочных стендов'
+                design: 'Дизайн выставочных стендов'
+                full_service: 'Полный выставочный сервис'
+            validate:
+                required: true
+        -
+            name: budget
+            label: 'Бюджет проекта'
+            placeholder: 'Укажите бюджет в рублях'
+            type: text
+            validate:
+                required: true
+        -
+            name: message
+            label: 'Описание проекта'
+            placeholder: 'Расскажите о вашем проекте, требованиях и пожеланиях'
+            type: textarea
+            validate:
+                required: true
+        -
+            name: files
+            label: 'Прикрепить файлы'
+            type: file
+            multiple: true
+            limit: 10
+            filesize: 32
+            destination: 'user-data://forms/uploads'
+            avoid_overwriting: true
+            random_name: false
+            accept:
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xlsx
+                - .ppt
+                - .pptx
+                - .jpg
+                - .jpeg
+                - .png
+                - .gif
+                - .bmp
+                - .tiff
+                - .zip
+                - .rar
+                - .txt
+            help: 'Можно загрузить до 10 файлов. Поддерживаемые форматы: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, изображения (JPG, PNG, GIF, BMP, TIFF), архивы (ZIP, RAR), текстовые файлы (TXT). Максимальный размер файла: 32MB.'
+        -
+            name: agreement
+            label: 'Согласие на обработку персональных данных'
+            type: checkbox
+            validate:
+                required: true
+    buttons:
+        -
+            type: submit
+            value: 'Отправить заявку'
+            classes: 'btn btn-primary custom-form-btn'
+        -
+            type: reset
+            value: Очистить
+            classes: 'btn btn-secondary custom-form-btn'
+    process:
+        -
+            email:
+                from: '{{ config.plugins.email.from }}'
+                to:
+                    - 'expoland@mail.ru'
+                    - 'stand@expoland-group.ru'
+                reply_to: '{{ form.value.email }}'
+                subject: '[Заявка] Новая заявка с сайта'
+                body: '{% include "forms/inquiry.txt.twig" %}'
+                attachments:
+                    - 'files'
+                process_markdown: false
+        -
+            save:
+                fileprefix: inquiry-
+                dateformat: Ymd-His-u
+                extension: txt
+                body: '{% include "forms/data.txt.twig" %}'
+                destination: 'user-data://forms/submissions'
+        -
+            message: 'Спасибо за заявку! Мы свяжемся с вами в ближайшее время.'
+        -
+            display: thankyou";s:8:"markdown";s:35:"# Отправить заявку
+
+";}s:7:"storage";a:7:{s:3:"key";s:16:"otpravit-zayavku";s:11:"storage_key";s:19:"06.otpravit-zayavku";s:8:"template";s:4:"form";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"form";i:1756928896;}}s:8:"children";a:1:{s:8:"thankyou";b:0;}s:8:"checksum";s:32:"67d0d36986f27cd3ee88e0a2a701dd32";}}

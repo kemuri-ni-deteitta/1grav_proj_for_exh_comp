@@ -235,6 +235,6 @@ class __TwigTemplate_838a24b35ece9d012c1afffe0ed0f7d786bec9b41123312d349155c1466
     {% endif %}
 </ul>
 
-", "partials/nav-quick-tray.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/nav-quick-tray.html.twig");
     }
 }

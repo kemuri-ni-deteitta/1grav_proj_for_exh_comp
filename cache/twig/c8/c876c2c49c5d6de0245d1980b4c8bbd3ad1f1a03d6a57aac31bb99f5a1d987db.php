@@ -56,6 +56,6 @@ class __TwigTemplate_a6b2fe3b1d072c6a72d83086e764007b8792d9be2c1ccf2f1279bf94c15
         return new Source("<button class=\"lines-button x\" type=\"button\" role=\"button\" aria-label=\"Toggle Navigation\" data-sidebar-mobile-toggle>
     <span class=\"lines\"></span>
 </button>
-", "partials/nav-toggle.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
+", "partials/nav-toggle.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/nav-toggle.html.twig");
     }
 }

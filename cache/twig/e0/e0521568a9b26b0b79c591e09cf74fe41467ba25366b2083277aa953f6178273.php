@@ -60,6 +60,6 @@ class __TwigTemplate_4368a99c482e19a6e4fe5b9e7ebbce7e229472aaaf13f536b59eebd1e5e
     public function getSourceContext()
     {
         return new Source("{% extends 'partials/base-root.html.twig' %}
-", "partials/base.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/base.html.twig");
     }
 }

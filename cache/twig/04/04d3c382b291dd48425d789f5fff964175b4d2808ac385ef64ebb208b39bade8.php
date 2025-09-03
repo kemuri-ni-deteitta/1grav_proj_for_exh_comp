@@ -70,7 +70,7 @@ class __TwigTemplate_d6400a12c580ff8652ca39c4e60296b5aaca92a9fc83a9483bb5964c35e
             echo "
     ";
             // line 14
-            $this->loadTemplate("forms/fields/section/section.html.twig", "forms/fields/section/section.html.twig", 14, "1818716357")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
+            $this->loadTemplate("forms/fields/section/section.html.twig", "forms/fields/section/section.html.twig", 14, "262692911")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
             // line 22
             echo "
 ";
@@ -126,13 +126,13 @@ class __TwigTemplate_d6400a12c580ff8652ca39c4e60296b5aaca92a9fc83a9483bb5964c35e
 
 {% endif %}
 {% endblock %}
-", "forms/fields/section/section.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
+", "forms/fields/section/section.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
     }
 }
 
 
 /* forms/fields/section/section.html.twig */
-class __TwigTemplate_d6400a12c580ff8652ca39c4e60296b5aaca92a9fc83a9483bb5964c35ebab98___1818716357 extends \Twig\Template
+class __TwigTemplate_d6400a12c580ff8652ca39c4e60296b5aaca92a9fc83a9483bb5964c35ebab98___262692911 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -225,6 +225,6 @@ class __TwigTemplate_d6400a12c580ff8652ca39c4e60296b5aaca92a9fc83a9483bb5964c35e
 
 {% endif %}
 {% endblock %}
-", "forms/fields/section/section.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
+", "forms/fields/section/section.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/section/section.html.twig");
     }
 }

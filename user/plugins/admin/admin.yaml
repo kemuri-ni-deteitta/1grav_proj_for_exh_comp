@@ -5,7 +5,7 @@ theme: grav
 logo_text: ''
 body_classes: ''
 content_padding: true
-twofa_enabled: true
+twofa_enabled: false
 sidebar:
   activate: tab
   hover_delay: 100
@@ -22,8 +22,8 @@ pages:
   show_parents: both
   show_modular: true
 session:
-  timeout: 1800
-edit_mode: normal
+  timeout: 86400
+edit_mode: expert
 frontend_preview_target: inline
 show_github_msg: true
 admin_icons: line-awesome

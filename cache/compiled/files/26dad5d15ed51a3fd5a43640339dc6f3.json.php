@@ -1,0 +1,372 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
+    'filename' => '/home/ivan/expoGroupOnServer/user/data/flex/indexes/pages.json',
+    'modified' => 1756930139,
+    'size' => 7649,
+    'data' => [
+        'version' => '1.5',
+        'timestamp' => 1756930139,
+        'count' => 28,
+        'index' => [
+            '' => [
+                'key' => '',
+                'storage_key' => '',
+                'template' => NULL,
+                'storage_timestamp' => 1756928896,
+                'children' => [
+                    '01.home' => 1756928896,
+                    '02.o-kompanii' => 1756928896,
+                    '03' => 1756928896,
+                    '03.uslugi' => 1756928896,
+                    '06.otpravit-zayavku' => 1756928896,
+                    '07.portfolio' => 1756928896,
+                    '08.kontakty' => 1756928896
+                ],
+                'checksum' => 'aaf61208dd07ff149e2e53f11acc1d9a'
+            ],
+            '01.home' => [
+                'key' => 'home',
+                'storage_key' => '01.home',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => '08e263c816104fc4295c4956028f5538'
+            ],
+            '02.o-kompanii' => [
+                'key' => 'o-kompanii',
+                'storage_key' => '02.o-kompanii',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    '01.o-nas' => 1756928896,
+                    '02.klienty-i-partnery' => 1756928896,
+                    '03.otzyvy' => 1756928896,
+                    '04.sertifikaty' => 1756928896
+                ],
+                'checksum' => 'edfcd8518e571f500c29d732e37a6423'
+            ],
+            '02.o-kompanii/01.o-nas' => [
+                'key' => 'o-kompanii/o-nas',
+                'storage_key' => '02.o-kompanii/01.o-nas',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => '626a5252d97fd6d7fe21ccb5608290d0'
+            ],
+            '02.o-kompanii/02.klienty-i-partnery' => [
+                'key' => 'o-kompanii/klienty-i-partnery',
+                'storage_key' => '02.o-kompanii/02.klienty-i-partnery',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => '3bedb0450b2b05da09a1a53fa8281f41'
+            ],
+            '02.o-kompanii/03.otzyvy' => [
+                'key' => 'o-kompanii/otzyvy',
+                'storage_key' => '02.o-kompanii/03.otzyvy',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => 'e0094451249242a4d3c9a1c8cf35abb4'
+            ],
+            '02.o-kompanii/04.sertifikaty' => [
+                'key' => 'o-kompanii/sertifikaty',
+                'storage_key' => '02.o-kompanii/04.sertifikaty',
+                'template' => 'certificates',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'certificates' => 1756928896
+                    ]
+                ],
+                'checksum' => 'f380935f209caeba689bc6e27f5c25bb'
+            ],
+            '03' => [
+                'key' => '03',
+                'storage_key' => '03',
+                'template' => NULL,
+                'storage_timestamp' => 1756928896,
+                'children' => [
+                    'uslugi' => 1756928896
+                ],
+                'checksum' => '0d5b9ecaaaea6612e563004e644e8fed'
+            ],
+            '03.uslugi' => [
+                'key' => 'uslugi',
+                'storage_key' => '03.uslugi',
+                'template' => 'modular',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'modular' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    '01.razrabotka-stendov' => 1756928896,
+                    '02.dizajn-stendov' => 1756928896,
+                    '03.polnyj-servis' => 1756928896
+                ],
+                'checksum' => '943ed5780d3f46464f99312a058e2916'
+            ],
+            '03.uslugi/01.razrabotka-stendov' => [
+                'key' => 'uslugi/razrabotka-stendov',
+                'storage_key' => '03.uslugi/01.razrabotka-stendov',
+                'template' => 'service-module',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'service-module' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    '01.typovye' => 1756928896,
+                    '02.nestandart' => 1756928896,
+                    '03.ekskluziv' => 1756928896
+                ],
+                'checksum' => 'c1ae4d1d85d1af27de120a2b1feeda95'
+            ],
+            '03.uslugi/01.razrabotka-stendov/01.typovye' => [
+                'key' => 'uslugi/razrabotka-stendov/typovye',
+                'storage_key' => '03.uslugi/01.razrabotka-stendov/01.typovye',
+                'template' => 'stand-page',
+                'storage_timestamp' => 1756929915,
+                'markdown' => [
+                    'ru' => [
+                        'stand-page' => 1756929915
+                    ]
+                ],
+                'checksum' => 'abd884076e65c7c8cd677e05bcfdea78'
+            ],
+            '03.uslugi/01.razrabotka-stendov/02.nestandart' => [
+                'key' => 'uslugi/razrabotka-stendov/nestandart',
+                'storage_key' => '03.uslugi/01.razrabotka-stendov/02.nestandart',
+                'template' => 'stand-page',
+                'storage_timestamp' => 1756929948,
+                'markdown' => [
+                    'ru' => [
+                        'stand-page' => 1756929948
+                    ]
+                ],
+                'checksum' => 'd39b0c2ebb29593a2313d1efd297abd2'
+            ],
+            '03.uslugi/01.razrabotka-stendov/03.ekskluziv' => [
+                'key' => 'uslugi/razrabotka-stendov/ekskluziv',
+                'storage_key' => '03.uslugi/01.razrabotka-stendov/03.ekskluziv',
+                'template' => 'blog',
+                'storage_timestamp' => 1756930115,
+                'markdown' => [
+                    'ru' => [
+                        'blog' => 1756928896,
+                        'stand-page' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    'images' => 1756930115
+                ],
+                'checksum' => '1cd7195628b3b081d2fd02fe3b169cea'
+            ],
+            '03.uslugi/01.razrabotka-stendov/03.ekskluziv/images' => [
+                'key' => 'uslugi/razrabotka-stendov/ekskluziv/images',
+                'storage_key' => '03.uslugi/01.razrabotka-stendov/03.ekskluziv/images',
+                'template' => NULL,
+                'storage_timestamp' => 1756930115,
+                'checksum' => 'c703cb4d87f56736960ad901641cddff'
+            ],
+            '03.uslugi/02.dizajn-stendov' => [
+                'key' => 'uslugi/dizajn-stendov',
+                'storage_key' => '03.uslugi/02.dizajn-stendov',
+                'template' => 'service-module',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'service-module' => 1756928896
+                    ]
+                ],
+                'checksum' => '19e18d4ae486a5a19a5c716d51a3459d'
+            ],
+            '03.uslugi/03.polnyj-servis' => [
+                'key' => 'uslugi/polnyj-servis',
+                'storage_key' => '03.uslugi/03.polnyj-servis',
+                'template' => 'service-module',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'service-module' => 1756928896
+                    ]
+                ],
+                'checksum' => '6899f95aeffbd21cb8d6ceaad9260f04'
+            ],
+            '03/uslugi' => [
+                'key' => '03/uslugi',
+                'storage_key' => '03/uslugi',
+                'template' => NULL,
+                'storage_timestamp' => 1756928896,
+                'children' => [
+                    '01.razrabotka-stendov' => 1756928896
+                ],
+                'checksum' => '663ecdfcaf275bed7f7d45103e2a6b6f'
+            ],
+            '03/uslugi/01.razrabotka-stendov' => [
+                'key' => '03/uslugi/razrabotka-stendov',
+                'storage_key' => '03/uslugi/01.razrabotka-stendov',
+                'template' => NULL,
+                'storage_timestamp' => 1756928896,
+                'children' => [
+                    '01.typovye' => 1756928896,
+                    '02.nestandart' => 1756928896,
+                    '03.ekskluziv' => 1756928896
+                ],
+                'checksum' => 'c7c1c4fabdbce150fcdaaebcb51fe811'
+            ],
+            '03/uslugi/01.razrabotka-stendov/01.typovye' => [
+                'key' => '03/uslugi/razrabotka-stendov/typovye',
+                'storage_key' => '03/uslugi/01.razrabotka-stendov/01.typovye',
+                'template' => 'stand-page',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'stand-page' => 1756928896
+                    ]
+                ],
+                'checksum' => '30a852b644472456354e9117bcfc7464'
+            ],
+            '03/uslugi/01.razrabotka-stendov/02.nestandart' => [
+                'key' => '03/uslugi/razrabotka-stendov/nestandart',
+                'storage_key' => '03/uslugi/01.razrabotka-stendov/02.nestandart',
+                'template' => NULL,
+                'storage_timestamp' => 1756928896,
+                'checksum' => 'b0558f4aba17e394ab77d8e7d249a570'
+            ],
+            '03/uslugi/01.razrabotka-stendov/03.ekskluziv' => [
+                'key' => '03/uslugi/razrabotka-stendov/ekskluziv',
+                'storage_key' => '03/uslugi/01.razrabotka-stendov/03.ekskluziv',
+                'template' => 'blog',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'blog' => 1756928896
+                    ]
+                ],
+                'checksum' => '4451e366bada76db84377593a74a3447'
+            ],
+            '06.otpravit-zayavku' => [
+                'key' => 'otpravit-zayavku',
+                'storage_key' => '06.otpravit-zayavku',
+                'template' => 'form',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'form' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    'thankyou' => 1756928896
+                ],
+                'checksum' => '67d0d36986f27cd3ee88e0a2a701dd32'
+            ],
+            '06.otpravit-zayavku/thankyou' => [
+                'key' => 'otpravit-zayavku/thankyou',
+                'storage_key' => '06.otpravit-zayavku/thankyou',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => '847cca2fc066f40f2eb676fbdb16c6f6'
+            ],
+            '07.portfolio' => [
+                'key' => 'portfolio',
+                'storage_key' => '07.portfolio',
+                'template' => 'portfolio',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'portfolio' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    '01.sample-project' => 1756928896
+                ],
+                'checksum' => 'ff68b149ffa8fe88947745dafb93e351'
+            ],
+            '07.portfolio/01.sample-project' => [
+                'key' => 'portfolio/sample-project',
+                'storage_key' => '07.portfolio/01.sample-project',
+                'template' => 'portfolio-item',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'portfolio-item' => 1756928896
+                    ]
+                ],
+                'checksum' => 'aa768724f3ac5fb7e53df219355ee15f'
+            ],
+            '08.kontakty' => [
+                'key' => 'kontakty',
+                'storage_key' => '08.kontakty',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    'ru' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    '01.forma-svyazi' => 1756928896
+                ],
+                'checksum' => '0f524301c7cf8db39fb5c8c98f65f728'
+            ],
+            '08.kontakty/01.forma-svyazi' => [
+                'key' => 'kontakty/forma-svyazi',
+                'storage_key' => '08.kontakty/01.forma-svyazi',
+                'template' => 'form',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'form' => 1756928896
+                    ]
+                ],
+                'children' => [
+                    'thankyou' => 1756928896
+                ],
+                'checksum' => 'a524f81ec0eb8b9665774d5fdbd618bf'
+            ],
+            '08.kontakty/01.forma-svyazi/thankyou' => [
+                'key' => 'kontakty/forma-svyazi/thankyou',
+                'storage_key' => '08.kontakty/01.forma-svyazi/thankyou',
+                'template' => 'default',
+                'storage_timestamp' => 1756928896,
+                'markdown' => [
+                    '' => [
+                        'default' => 1756928896
+                    ]
+                ],
+                'checksum' => '9664f08bda14359fd88008ece7f28fc0'
+            ]
+        ]
+    ]
+];

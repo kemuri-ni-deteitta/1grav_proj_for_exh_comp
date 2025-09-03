@@ -67,7 +67,7 @@ class __TwigTemplate_c56ed346a857f0c34b7fcd4e01fab262ec72ede29993d1e48b24c95f223
         echo ">
     ";
         // line 12
-        $this->loadTemplate("partials/blueprints.html.twig", "partials/blueprints.html.twig", 12, "1767982385")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/blueprints.html.twig", "partials/blueprints.html.twig", 12, "1016979752")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 16
         echo "
     ";
@@ -210,13 +210,13 @@ class __TwigTemplate_c56ed346a857f0c34b7fcd4e01fab262ec72ede29993d1e48b24c95f223
         {{ nonce_field('admin-form', 'admin-nonce')|raw }}
     {% endif %}
 </form>
-", "partials/blueprints.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
+", "partials/blueprints.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
     }
 }
 
 
 /* partials/blueprints.html.twig */
-class __TwigTemplate_c56ed346a857f0c34b7fcd4e01fab262ec72ede29993d1e48b24c95f223f5ddb___1767982385 extends \Twig\Template
+class __TwigTemplate_c56ed346a857f0c34b7fcd4e01fab262ec72ede29993d1e48b24c95f223f5ddb___1016979752 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -313,6 +313,6 @@ class __TwigTemplate_c56ed346a857f0c34b7fcd4e01fab262ec72ede29993d1e48b24c95f223
         {{ nonce_field('admin-form', 'admin-nonce')|raw }}
     {% endif %}
 </form>
-", "partials/blueprints.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
+", "partials/blueprints.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/blueprints.html.twig");
     }
 }

@@ -122,6 +122,6 @@ class __TwigTemplate_d20b5492b8d195a014d23475e75423aa7f1cea8785b9102eaf3e3dccce5
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/nav-user-details.html.twig");
     }
 }

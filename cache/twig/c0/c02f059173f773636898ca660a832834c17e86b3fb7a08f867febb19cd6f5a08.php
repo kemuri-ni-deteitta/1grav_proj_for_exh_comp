@@ -81,6 +81,6 @@ class __TwigTemplate_778e56c007c30241e56b73c2b3b4d40513c17d5e5de4c8c33dc3d7fdb66
     {% set codemirrorOptions = codemirrorOptions|merge({'ignore': []}) %}
 {% endif %}
 {# end backward compatibility #}
-", "forms/fields/codemirror/codemirror.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/codemirror/codemirror.html.twig");
+", "forms/fields/codemirror/codemirror.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/codemirror/codemirror.html.twig");
     }
 }

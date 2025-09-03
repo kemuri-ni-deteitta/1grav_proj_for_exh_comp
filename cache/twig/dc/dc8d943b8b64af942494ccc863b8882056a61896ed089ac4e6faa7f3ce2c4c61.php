@@ -566,6 +566,6 @@ class __TwigTemplate_b44ee199e89a777c6b454488e909b1bfcea5d15b294db7be34a2e8035f9
         <span class=\"note\">{{ \"PLUGIN_ADMIN.CANNOT_ADD_FILES_PAGE_NOT_SAVED\"|t|raw }}</span>
     {% endif %}
 {% endblock %}
-", "forms/fields/file/file.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/file/file.html.twig");
+", "forms/fields/file/file.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/file/file.html.twig");
     }
 }

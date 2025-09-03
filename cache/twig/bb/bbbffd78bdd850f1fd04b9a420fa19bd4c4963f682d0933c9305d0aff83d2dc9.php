@@ -102,6 +102,6 @@ class __TwigTemplate_3edede7fb08980e92c16ca530843ac89c859f1a28436fc8676d79a263e5
 {% if language_codes.rtl(grav.user.language) %}
     {% do assets.addCss(theme_url~'/css/rtl.css') %}
 {% endif %}
-", "partials/stylesheets.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/stylesheets.html.twig");
+", "partials/stylesheets.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/stylesheets.html.twig");
     }
 }

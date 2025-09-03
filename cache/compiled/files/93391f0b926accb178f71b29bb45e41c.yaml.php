@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://login/login.yaml',
-    'modified' => 1756582843,
+    'modified' => 1756929744,
     'size' => 4460,
     'data' => [
         'enabled' => true,
@@ -10,7 +10,7 @@ return [
         'redirect_to_login' => false,
         'redirect_after_login' => false,
         'redirect_after_logout' => true,
-        'session_user_sync' => false,
+        'session_user_sync' => true,
         'site_host' => NULL,
         'route' => '/login',
         'route_after_login' => '/',

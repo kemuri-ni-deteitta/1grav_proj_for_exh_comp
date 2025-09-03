@@ -93,6 +93,6 @@ class __TwigTemplate_3b925347ad516970a85609840dd188dc757b6b5046bed90a172b33e51a3
         </div>
     </form>
 </div>
-", "partials/modal-changes-detected.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/modal-changes-detected.html.twig");
+", "partials/modal-changes-detected.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/modal-changes-detected.html.twig");
     }
 }

@@ -3459,7 +3459,7 @@ document.addEventListener('DOMContentLoaded', function() {
 {% endblock %}
 
 </body>
-</html>", "partials/base.html.twig", "/var/www/gravExpo/user/themes/quark/templates/partials/base.html.twig");
+</html>", "partials/base.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/partials/base.html.twig");
     }
     private $deferred;
 }

@@ -48,7 +48,7 @@ class __TwigTemplate_49929fba54054b1ae4035907a7b7a7b51a4dc13a38208dc7631b02cb448
         echo "\" data-grav-keepalive=\"true\">
     ";
         // line 6
-        $this->loadTemplate("partials/blueprints-new-folder.html.twig", "partials/blueprints-new-folder.html.twig", 6, "1391330345")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/blueprints-new-folder.html.twig", "partials/blueprints-new-folder.html.twig", 6, "979010365")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 10
         echo "
     <input type=\"hidden\" name=\"task\" value=\"saveNewFolder\" />
@@ -111,13 +111,13 @@ class __TwigTemplate_49929fba54054b1ae4035907a7b7a7b51a4dc13a38208dc7631b02cb448
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new-folder.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/blueprints-new-folder.html.twig");
+", "partials/blueprints-new-folder.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/blueprints-new-folder.html.twig");
     }
 }
 
 
 /* partials/blueprints-new-folder.html.twig */
-class __TwigTemplate_49929fba54054b1ae4035907a7b7a7b51a4dc13a38208dc7631b02cb448a829d___1391330345 extends \Twig\Template
+class __TwigTemplate_49929fba54054b1ae4035907a7b7a7b51a4dc13a38208dc7631b02cb448a829d___979010365 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -198,6 +198,6 @@ class __TwigTemplate_49929fba54054b1ae4035907a7b7a7b51a4dc13a38208dc7631b02cb448
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new-folder.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/blueprints-new-folder.html.twig");
+", "partials/blueprints-new-folder.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/blueprints-new-folder.html.twig");
     }
 }

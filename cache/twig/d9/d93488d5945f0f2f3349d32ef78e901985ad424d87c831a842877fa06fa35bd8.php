@@ -968,6 +968,6 @@ class __TwigTemplate_8affbc1414b1bc21cbf3c8be1c05f6970914c11622430a78a633eed1fed
         </div>
     </div>
 {% endblock %}
-", "forms/fields/list/list.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/list/list.html.twig");
+", "forms/fields/list/list.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/list/list.html.twig");
     }
 }

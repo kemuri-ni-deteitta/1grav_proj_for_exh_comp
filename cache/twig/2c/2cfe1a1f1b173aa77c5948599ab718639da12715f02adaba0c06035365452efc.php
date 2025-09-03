@@ -62,6 +62,6 @@ class __TwigTemplate_a2ed7a25833d0bc95cc78970d718dfc544d04c65d1c784519fe35404fc5
     {
         return new Source("{% set user_avatar = admin.user.getAvatarUrl() %}
 <img src=\"{{ user_avatar ~ '?s=80' }}\" />
-", "partials/nav-user-avatar.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/nav-user-avatar.html.twig");
+", "partials/nav-user-avatar.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/nav-user-avatar.html.twig");
     }
 }

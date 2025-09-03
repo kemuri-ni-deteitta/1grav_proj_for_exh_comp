@@ -134,6 +134,6 @@ class __TwigTemplate_468c08905fb2b449dc113d8c8958db3e01c905122aa77199929f38ee896
     padding: 0.80rem 0 0 0;
 }
 </style>
-", "partials/footer.html.twig", "/var/www/gravExpo/user/themes/quark/templates/partials/footer.html.twig");
+", "partials/footer.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/partials/footer.html.twig");
     }
 }

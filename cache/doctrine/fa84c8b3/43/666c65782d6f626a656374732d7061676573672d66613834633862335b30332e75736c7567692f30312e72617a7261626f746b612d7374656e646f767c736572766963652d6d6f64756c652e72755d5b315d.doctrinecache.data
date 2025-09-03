@@ -1,0 +1,15 @@
+1756931086
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:25:"uslugi/razrabotka-stendov";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:6:{s:5:"title";s:88:"Разработка и строительство выставочных стендов";s:4:"menu";s:88:"Разработка и строительство выставочных стендов";s:10:"child_type";s:7:"default";s:7:"visible";b:1;s:8:"template";s:7:"default";s:5:"order";a:2:{s:2:"by";s:6:"folder";s:3:"dir";s:3:"asc";}}s:11:"frontmatter";s:281:"title: 'Разработка и строительство выставочных стендов'
+menu: 'Разработка и строительство выставочных стендов'
+child_type: default
+visible: true
+template: default
+order:
+    by: folder
+    dir: asc";s:8:"markdown";s:715:"## Разработка и строительство выставочных стендов
+
+Мы создаем стенды различных типов, учитывая цели, бюджет и особенности вашего бренда:
+
+- [**Типовые стенды**](/uslugi/razrabotka-stendov/typovye) –  надежные и экономичные решения
+-  [**Нестандартные стенды**](/uslugi/razrabotka-stendov/nestandart) – индивидуальный подход с элементами эксклюзивности  
+- [**Эксклюзивные стенды**](/uslugi/razrabotka-stendov/ekskluziv) – полностью авторские проекты";}s:7:"storage";a:9:{s:3:"key";s:25:"uslugi/razrabotka-stendov";s:11:"storage_key";s:49:"03.uslugi/01.razrabotka-stendov|service-module.ru";s:8:"template";s:14:"service-module";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:14:"service-module";i:1756928896;}}s:8:"children";a:3:{s:10:"01.typovye";b:0;s:13:"02.nestandart";b:0;s:12:"03.ekskluziv";b:0;}s:8:"checksum";s:32:"c1ae4d1d85d1af27de120a2b1feeda95";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

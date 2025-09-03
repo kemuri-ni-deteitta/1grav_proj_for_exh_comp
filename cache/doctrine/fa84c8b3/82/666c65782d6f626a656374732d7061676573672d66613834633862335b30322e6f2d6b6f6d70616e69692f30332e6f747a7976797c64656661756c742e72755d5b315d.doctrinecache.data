@@ -1,0 +1,31 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:17:"o-kompanii/otzyvy";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:7:{s:5:"title";s:12:"Отзывы";s:11:"media_order";s:39:"1660052115BP_-_GOFROTEHNOLOGII_2022.jpg";s:4:"menu";s:12:"Отзывы";s:7:"visible";b:1;s:8:"template";s:7:"reviews";s:7:"reviews";a:3:{i:0;a:3:{s:12:"company_name";s:25:"ООО "ТехноМаш"";s:11:"review_text";s:153:"Отличная работа на выставке "Металлообработка-2023". Стенд привлек много посетителей.";s:12:"image_upload";a:1:{s:74:"user/pages/02.o-kompanii/03.otzyvy/1660052115BP_-_GOFROTEHNOLOGII_2022.jpg";a:5:{s:4:"name";s:39:"1660052115BP_-_GOFROTEHNOLOGII_2022.jpg";s:9:"full_path";s:39:"1660052115BP_-_GOFROTEHNOLOGII_2022.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:18484;s:4:"path";s:74:"user/pages/02.o-kompanii/03.otzyvy/1660052115BP_-_GOFROTEHNOLOGII_2022.jpg";}}}i:1;a:3:{s:12:"company_name";s:31:"Компания "Пример"";s:11:"review_text";s:58:"Пример текста отзыва от клиента";s:12:"image_upload";a:1:{s:40:"user/pages/02.o-kompanii/03.otzyvy/5.jpg";a:5:{s:4:"name";s:5:"5.jpg";s:9:"full_path";s:5:"5.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:244921;s:4:"path";s:40:"user/pages/02.o-kompanii/03.otzyvy/5.jpg";}}}i:2;a:1:{s:12:"company_name";s:29:"Третья компания";}}s:8:"page-toc";a:1:{s:6:"active";b:0;}}s:11:"frontmatter";s:1256:"title: Отзывы
+media_order: 1660052115BP_-_GOFROTEHNOLOGII_2022.jpg
+menu: Отзывы
+visible: true
+template: reviews
+reviews:
+    -
+        company_name: 'ООО "ТехноМаш"'
+        review_text: 'Отличная работа на выставке "Металлообработка-2023". Стенд привлек много посетителей.'
+        image_upload:
+            user/pages/02.o-kompanii/03.otzyvy/1660052115BP_-_GOFROTEHNOLOGII_2022.jpg:
+                name: 1660052115BP_-_GOFROTEHNOLOGII_2022.jpg
+                full_path: 1660052115BP_-_GOFROTEHNOLOGII_2022.jpg
+                type: image/jpeg
+                size: 18484
+                path: user/pages/02.o-kompanii/03.otzyvy/1660052115BP_-_GOFROTEHNOLOGII_2022.jpg
+    -
+        company_name: 'Компания "Пример"'
+        review_text: 'Пример текста отзыва от клиента'
+        image_upload:
+            user/pages/02.o-kompanii/03.otzyvy/5.jpg:
+                name: 5.jpg
+                full_path: 5.jpg
+                type: image/jpeg
+                size: 244921
+                path: user/pages/02.o-kompanii/03.otzyvy/5.jpg
+    -
+        company_name: 'Третья компания'
+page-toc:
+    active: false";s:8:"markdown";s:32:"# Отзывы клиентов ";}s:7:"storage";a:8:{s:3:"key";s:17:"o-kompanii/otzyvy";s:11:"storage_key";s:34:"02.o-kompanii/03.otzyvy|default.ru";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:7:"default";i:1756928896;}}s:8:"checksum";s:32:"e0094451249242a4d3c9a1c8cf35abb4";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

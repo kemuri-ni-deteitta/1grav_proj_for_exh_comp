@@ -73,6 +73,6 @@ class __TwigTemplate_24044184c32fb82dc596ebacc6eec3c13c1e7789f646d2b42948c154174
 {% if xss_status is not empty %}
     <div class=\"notice alert\">{{ \"PLUGIN_ADMIN.XSS_ISSUE\"|t(xss_status)|raw }}</div>
 {% endif %}
-", "forms/fields/xss/xss.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/forms/fields/xss/xss.html.twig");
+", "forms/fields/xss/xss.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/forms/fields/xss/xss.html.twig");
     }
 }

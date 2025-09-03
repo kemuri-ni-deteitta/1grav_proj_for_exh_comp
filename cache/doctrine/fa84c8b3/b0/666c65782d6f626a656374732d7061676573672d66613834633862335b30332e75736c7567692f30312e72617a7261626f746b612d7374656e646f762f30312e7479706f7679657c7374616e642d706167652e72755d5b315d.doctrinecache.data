@@ -1,0 +1,313 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:33:"uslugi/razrabotka-stendov/typovye";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:5:{s:5:"title";s:27:"Типовые стенды";s:4:"menu";s:27:"Типовые стенды";s:7:"visible";b:1;s:8:"template";s:10:"stand-page";s:7:"gallery";a:8:{i:0;a:7:{s:5:"title";s:54:"11111111111111111111111111111111111111111111dsadas1111";s:4:"desc";s:8:"12312312";s:6:"images";a:8:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/3.jpg";a:5:{s:4:"name";s:5:"3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/3.jpg";}}}i:1;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804224132-3.jpg";a:5:{s:4:"name";s:20:"20250804224132-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804224132-3.jpg";}}}i:2;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:63:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/nagr2.jpg";a:5:{s:4:"name";s:9:"nagr2.jpg";s:9:"full_path";s:9:"nagr2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:366793;s:4:"path";s:63:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/nagr2.jpg";}}}i:3;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805183158-3.jpg";a:5:{s:4:"name";s:20:"20250805183158-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805183158-3.jpg";}}}i:4;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/2.jpg";a:5:{s:4:"name";s:5:"2.jpg";s:9:"full_path";s:5:"2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:287975;s:4:"path";s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/2.jpg";}}}i:5;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:78:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185007-nagr2.jpg";a:5:{s:4:"name";s:24:"20250805185007-nagr2.jpg";s:9:"full_path";s:9:"nagr2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:366793;s:4:"path";s:78:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185007-nagr2.jpg";}}}i:6;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185010-3.jpg";a:5:{s:4:"name";s:20:"20250805185010-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185010-3.jpg";}}}i:7;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:0:{}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:1;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:5:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/8.jpg";a:5:{s:4:"name";s:5:"8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/8.jpg";}}}i:1;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805181319-3.jpg";a:5:{s:4:"name";s:20:"20250805181319-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805181319-3.jpg";}}}i:2;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185131-8.jpg";a:5:{s:4:"name";s:20:"20250805185131-8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185131-8.jpg";}}}i:3;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185148-8.jpg";a:5:{s:4:"name";s:20:"20250805185148-8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185148-8.jpg";}}}i:4;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185153-5.jpg";a:5:{s:4:"name";s:20:"20250805185153-5.jpg";s:9:"full_path";s:5:"5.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:244921;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185153-5.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:2;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:1:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/5.jpg";a:5:{s:4:"name";s:5:"5.jpg";s:9:"full_path";s:5:"5.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:244921;s:4:"path";s:59:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/5.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:3;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:1:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804213517-3.jpg";a:5:{s:4:"name";s:20:"20250804213517-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804213517-3.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:4;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:5:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212405-2.jpg";a:5:{s:4:"name";s:20:"20250805212405-2.jpg";s:9:"full_path";s:5:"2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:287975;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212405-2.jpg";}}}i:1;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212410-8.jpg";a:5:{s:4:"name";s:20:"20250805212410-8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212410-8.jpg";}}}i:2;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212417-2.jpg";a:5:{s:4:"name";s:20:"20250805212417-2.jpg";s:9:"full_path";s:5:"2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:287975;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212417-2.jpg";}}}i:3;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212420-8.jpg";a:5:{s:4:"name";s:20:"20250805212420-8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212420-8.jpg";}}}i:4;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:0:{}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:5;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:1:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201249-3.jpg";a:5:{s:4:"name";s:20:"20250817201249-3.jpg";s:9:"full_path";s:5:"3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:238527;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201249-3.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:6;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:1:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201239-2.jpg";a:5:{s:4:"name";s:20:"20250817201239-2.jpg";s:9:"full_path";s:5:"2.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:287975;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201239-2.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}i:7;a:7:{s:5:"title";N;s:4:"desc";N;s:6:"images";a:1:{i:0;a:3:{s:7:"caption";N;s:7:"is_main";b:0;s:12:"image_upload";a:1:{s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201235-8.jpg";a:5:{s:4:"name";s:20:"20250817201235-8.jpg";s:9:"full_path";s:5:"8.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:218837;s:4:"path";s:74:"user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201235-8.jpg";}}}}s:17:"construction_area";N;s:15:"exhibition_name";N;s:12:"company_name";N;s:12:"project_year";N;}}}s:11:"frontmatter";s:11611:"title: 'Типовые стенды'
+menu: 'Типовые стенды'
+visible: true
+template: stand-page
+gallery:
+    -
+        title: 11111111111111111111111111111111111111111111dsadas1111
+        desc: '12312312'
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/3.jpg:
+                        name: 3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/3.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804224132-3.jpg:
+                        name: 20250804224132-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804224132-3.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/nagr2.jpg:
+                        name: nagr2.jpg
+                        full_path: nagr2.jpg
+                        type: image/jpeg
+                        size: 366793
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/nagr2.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805183158-3.jpg:
+                        name: 20250805183158-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805183158-3.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/2.jpg:
+                        name: 2.jpg
+                        full_path: 2.jpg
+                        type: image/jpeg
+                        size: 287975
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/2.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185007-nagr2.jpg:
+                        name: 20250805185007-nagr2.jpg
+                        full_path: nagr2.jpg
+                        type: image/jpeg
+                        size: 366793
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185007-nagr2.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185010-3.jpg:
+                        name: 20250805185010-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185010-3.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload: {  }
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/8.jpg:
+                        name: 8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/8.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805181319-3.jpg:
+                        name: 20250805181319-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805181319-3.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185131-8.jpg:
+                        name: 20250805185131-8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185131-8.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185148-8.jpg:
+                        name: 20250805185148-8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185148-8.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185153-5.jpg:
+                        name: 20250805185153-5.jpg
+                        full_path: 5.jpg
+                        type: image/jpeg
+                        size: 244921
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805185153-5.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/5.jpg:
+                        name: 5.jpg
+                        full_path: 5.jpg
+                        type: image/jpeg
+                        size: 244921
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/5.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804213517-3.jpg:
+                        name: 20250804213517-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250804213517-3.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212405-2.jpg:
+                        name: 20250805212405-2.jpg
+                        full_path: 2.jpg
+                        type: image/jpeg
+                        size: 287975
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212405-2.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212410-8.jpg:
+                        name: 20250805212410-8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212410-8.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212417-2.jpg:
+                        name: 20250805212417-2.jpg
+                        full_path: 2.jpg
+                        type: image/jpeg
+                        size: 287975
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212417-2.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212420-8.jpg:
+                        name: 20250805212420-8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250805212420-8.jpg
+            -
+                caption: null
+                is_main: false
+                image_upload: {  }
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201249-3.jpg:
+                        name: 20250817201249-3.jpg
+                        full_path: 3.jpg
+                        type: image/jpeg
+                        size: 238527
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201249-3.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201239-2.jpg:
+                        name: 20250817201239-2.jpg
+                        full_path: 2.jpg
+                        type: image/jpeg
+                        size: 287975
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201239-2.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
+    -
+        title: null
+        desc: null
+        images:
+            -
+                caption: null
+                is_main: false
+                image_upload:
+                    user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201235-8.jpg:
+                        name: 20250817201235-8.jpg
+                        full_path: 8.jpg
+                        type: image/jpeg
+                        size: 218837
+                        path: user/pages/03.uslugi/01.razrabotka-stendov/01.typovye/20250817201235-8.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null";s:8:"markdown";s:1763:"# Типовые стенды
+## Быстро. Надежно. Выгодно
+
+Ограниченность бюджета не означает, что придется использовать безликое сооружение, которое сведет к минимуму не только затраты на участие, но и эффективность выставочной работы.  
+**Строительство стендов** может осуществляться на основе стандартной конструкции, при этом результат будет впечатляющим и оригинальным, если подойти к задаче творчески.
+
+## Типовой (стандартный) стенд
+
+Быстро собираемая и разбираемая конструкция *(Octanorm или Konsta)*, включающая:
+
+- Настил ковролина *(цвет — серый)*
+- Стеновые ограждения белого цвета по периметру стенда
+- Фризовая панель с названием компании
+- Освещение, электрический щит и разводка электрики
+- Информационная стойка
+- Мебель: стол переговорный, стулья, барный стул
+- Закрытая переговорная или хозблок *(для площади от 24 кв. м)*
+- Вешалка, урна
+
+### Когда выбирать типовой стенд?
+
+- Первое участие в выставке
+- Небольшой бюджет
+- Срочная подготовка
+- Участие в нескольких выставках подряд
+";}s:7:"storage";a:8:{s:3:"key";s:33:"uslugi/razrabotka-stendov/typovye";s:11:"storage_key";s:56:"03.uslugi/01.razrabotka-stendov/01.typovye|stand-page.ru";s:8:"template";s:10:"stand-page";s:17:"storage_timestamp";i:1756929915;s:8:"markdown";a:1:{s:2:"ru";a:1:{s:10:"stand-page";i:1756929915;}}s:8:"checksum";s:32:"abd884076e65c7c8cd677e05bcfdea78";s:6:"exists";b:1;s:4:"lang";s:2:"ru";}}

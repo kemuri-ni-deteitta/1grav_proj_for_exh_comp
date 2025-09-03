@@ -1,0 +1,21 @@
+1756931076
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:30:"kontakty/forma-svyazi/thankyou";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:39:"Спасибо за обращение!";s:8:"template";s:7:"default";s:7:"visible";b:0;}s:11:"frontmatter";s:79:"title: Спасибо за обращение!
+template: default
+visible: false";s:8:"markdown";s:599:"# Спасибо за обращение!
+
+Мы получили ваше сообщение и ответим вам в ближайшее время.
+
+## Время ответа
+
+- **Общие вопросы**: до 4 часов в рабочее время
+- **Коммерческие предложения**: до 24 часов
+- **Партнёрство**: до 48 часов
+
+## Контакты для срочных вопросов
+
+- **Телефон**: +7 (495) 123-45-67
+- **Email**: info@expo-land.ru
+
+---
+
+[Вернуться на главную](/) | [Контакты](/kontakty) ";}s:7:"storage";a:6:{s:3:"key";s:30:"kontakty/forma-svyazi/thankyou";s:11:"storage_key";s:36:"08.kontakty/01.forma-svyazi/thankyou";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1756928896;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"default";i:1756928896;}}s:8:"checksum";s:32:"9664f08bda14359fd88008ece7f28fc0";}}

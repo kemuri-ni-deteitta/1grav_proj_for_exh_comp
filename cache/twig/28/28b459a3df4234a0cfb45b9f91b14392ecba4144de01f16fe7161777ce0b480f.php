@@ -179,6 +179,6 @@ class __TwigTemplate_27d4bada7110ef9f949c31842bb7dd7408d4715cb77ca44805a87002b9a
       {% endif %}
     </li>
   {% endfor %}
-{% endmacro %}", "macros/macros.html.twig", "/var/www/gravExpo/user/themes/quark/templates/macros/macros.html.twig");
+{% endmacro %}", "macros/macros.html.twig", "/home/ivan/expoGroupOnServer/user/themes/quark/templates/macros/macros.html.twig");
     }
 }

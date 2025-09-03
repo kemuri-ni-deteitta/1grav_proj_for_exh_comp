@@ -5,8 +5,11 @@ visible: true
 template: stand-page
 gallery:
     -
+        title: '312313131'
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/2.jpg:
@@ -16,6 +19,7 @@ gallery:
                         size: 287975
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/2.jpg
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/8.jpg:
@@ -25,6 +29,7 @@ gallery:
                         size: 218837
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/8.jpg
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/3.jpg:
@@ -34,6 +39,7 @@ gallery:
                         size: 238527
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/3.jpg
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/nagr2.jpg:
@@ -42,9 +48,16 @@ gallery:
                         type: image/jpeg
                         size: 366793
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/nagr2.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
     -
+        title: null
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215952-3.jpg:
@@ -54,6 +67,7 @@ gallery:
                         size: 238527
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215952-3.jpg
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215955-8.jpg:
@@ -62,9 +76,16 @@ gallery:
                         type: image/jpeg
                         size: 218837
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215955-8.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
     -
+        title: null
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215959-8.jpg:
@@ -73,9 +94,16 @@ gallery:
                         type: image/jpeg
                         size: 218837
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805215959-8.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
     -
+        title: null
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220003-8.jpg:
@@ -84,9 +112,16 @@ gallery:
                         type: image/jpeg
                         size: 218837
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220003-8.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
     -
+        title: null
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220024-nagr2.jpg:
@@ -95,9 +130,16 @@ gallery:
                         type: image/jpeg
                         size: 366793
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220024-nagr2.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
     -
+        title: null
+        desc: null
         images:
             -
+                caption: null
                 is_main: false
                 image_upload:
                     user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220020-8.jpg:
@@ -106,6 +148,10 @@ gallery:
                         type: image/jpeg
                         size: 218837
                         path: user/pages/03.uslugi/01.razrabotka-stendov/02.nestandart/20250805220020-8.jpg
+        construction_area: null
+        exhibition_name: null
+        company_name: null
+        project_year: null
 ---
 
 # Нестандартные стенды

@@ -95,6 +95,6 @@ class __TwigTemplate_e3b686e3fc618118defd7389863cb67cc06a50ab56adaa56f46fc3bccc3
 
 {% include 'partials/javascripts-extra.html.twig' ignore missing %}
 {% endif %}
-", "partials/javascripts.html.twig", "/var/www/gravExpo/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
+", "partials/javascripts.html.twig", "/home/ivan/expoGroupOnServer/user/plugins/admin/themes/grav/templates/partials/javascripts.html.twig");
     }
 }
